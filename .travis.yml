@@ -6,5 +6,5 @@ before_install:
   - cp /usr/lib/python2.7/dist-packages/fontforge.* "$HOME/virtualenv/python2.7.8/lib/python2.7/site-packages"
 install:
   - export LD_LIBRARY_PATH=/usr/local/lib
-  - pip install fontbakery-cli
-script: LANG="en" fontbakery.py .
+  - "pip install git+https://github.com/googlefonts/fontbakery-cli.git"
+script: PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH LANG="en" fontbakery.py .
