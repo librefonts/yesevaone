@@ -18,3 +18,4 @@ env:
 after_success:
 - rm -rf builds/build/sources builds/build/.tests.yaml builds/build/build.state.yaml
 - PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH travis-deploy.py
+- python -c "import sys; print sys.path"
