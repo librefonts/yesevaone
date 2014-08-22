@@ -7,12 +7,11 @@ before_install:
 install:
 - pip install git+https://github.com/behdad/fontTools.git
 - pip install git+https://github.com/googlefonts/fontbakery-cli.git
-- pip install jinja2
 script: PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH fontbakery.py .
 branches:
   only:
   - master
-after_success:
+after_script:
 - rm -rf builds/build/sources builds/build/build.state.yaml
 - PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH bakery-report.py builds/build
 - PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH travis-deploy.py
