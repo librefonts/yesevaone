@@ -13,9 +13,10 @@ branches:
   only:
   - master
 after_script:
-- rm -rf builds/build/sources builds/build/build.state.yaml
+- rm -rf builds/build/sources
 - PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH bakery-report.py --with-upstream-tests=.upstream.yaml builds/build
 - PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH travis-deploy.py
+- rm -rf builds/build/build.state.yaml
 env:
   global:
     secure: nexLlj3kidO2xEqk9wuIypEbzQ4mOV44pvrFT7UJVcJDeOe/hugLvGkJU0v/kr8pw7Cc7hLWH5gyu+T4aNf+26GCawDw+LVGN3WUodRRoaIdLebSAvvk+6AM3F2WncgthGMFMWpdw5qQJuh5FK+3bCnvv55ECYOZ5RbNSsfeXlw=
