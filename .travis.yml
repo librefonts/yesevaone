@@ -9,6 +9,8 @@ install:
 - pip install git+https://github.com/googlefonts/fontbakery-cli.git
 - pip install jinja2
 - pip install git+https://github.com/googlefonts/fontcrunch.git
+before_script:
+- mkdir builds/build
 script: PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH fontbakery.py . | tee builds/build/build.log
 branches:
   only:
