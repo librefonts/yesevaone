@@ -1,5 +1,5 @@
 commit: HEAD
-fontcrunch: false
+fontcrunch: true
 license_file: 'OFL.txt'
 notes: ''
 process_files: [YesevaOne-Regular.ttf.ttx]
