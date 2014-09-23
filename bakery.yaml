@@ -1,7 +1,6 @@
 commit: HEAD
 fontcrunch: false
 license_file: 'OFL.txt'
-notes: ''
 process_files: [YesevaOne-Regular.ttf.ttx]
 pyftsubset: --notdef-outline --name-IDs="*" --hinting
 subset: [latin, latin-ext, cyrillic]
