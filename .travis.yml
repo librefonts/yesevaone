@@ -18,7 +18,7 @@ branches:
   only:
   - master
 after_script:
-- PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH fontbakery-report.py builds/$TRAVIS_COMMIT
+- PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH fontbakery-report.py $TRAVIS_COMMIT
 - rm -rf $TRAVIS_COMMIT/sources
 - rm -rf $TRAVIS_COMMIT/build.state.yaml
 - PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH fontbakery-travis-deploy.py
