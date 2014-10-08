@@ -13,7 +13,7 @@ install:
 before_script:
 - mkdir -p $TRAVIS_COMMIT
 - npm install -g bower
-script: PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH fontbakery-build.py .
+script: (set -o pipefail; PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH fontbakery-build.py . 2>&1 | tee -a $TRAVIS_COMMIT/buildlog.txt)
 branches:
   only:
   - master
