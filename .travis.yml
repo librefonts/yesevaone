@@ -11,16 +11,16 @@ install:
 - pip install git+https://github.com/googlefonts/fontbakery-cli.git
 - pip install jinja2
 before_script:
-- mkdir -p $TRAVIS_COMMIT
+- mkdir -p builds/$TRAVIS_COMMIT
 - npm install -g bower
-script: (set -o pipefail; PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH fontbakery-build.py . 2>&1 | tee -a $TRAVIS_COMMIT/buildlog.txt)
+script: (set -o pipefail; PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH fontbakery-build.py . 2>&1 | tee -a builds/$TRAVIS_COMMIT/buildlog.txt)
 branches:
   only:
   - master
 after_script:
-- PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH fontbakery-report.py $TRAVIS_COMMIT
-- rm -rf $TRAVIS_COMMIT/sources
-- rm -rf $TRAVIS_COMMIT/build.state.yaml
+- PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH fontbakery-report.py builds/$TRAVIS_COMMIT
+- rm -rf builds/$TRAVIS_COMMIT/sources
+- rm -rf builds/$TRAVIS_COMMIT/build.state.yaml
 - PATH=/home/travis/virtualenv/python2.7.8/bin/:$PATH fontbakery-travis-deploy.py
 env:
   global:
