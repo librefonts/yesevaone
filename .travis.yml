@@ -9,7 +9,7 @@ before_install:
 install:
 - pip install git+https://github.com/behdad/fontTools.git
 - pip install git+https://github.com/googlefonts/fontcrunch.git
-- pip install git+https://github.com/googlefonts/fontbakery-cli.git
+- pip install git+https://github.com/googlefonts/fontbakery.git
 - pip install jinja2
 before_script:
 - mkdir -p builds/$TRAVIS_COMMIT
