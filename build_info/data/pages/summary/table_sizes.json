@@ -1,0 +1,63 @@
+{
+  "tables": [
+    "GDEF", 
+    "head", 
+    "loca", 
+    "name", 
+    "post", 
+    "OS/2", 
+    "fpgm", 
+    "GPOS", 
+    "maxp", 
+    "GSUB", 
+    "glyf", 
+    "prep", 
+    "cmap", 
+    "gasp", 
+    "hhea", 
+    "hmtx", 
+    "cvt ", 
+    "kern"
+  ], 
+  "sizes": [
+    {
+      "Yeseva-One.ttf": {
+        "head": 54, 
+        "loca": 902, 
+        "name": 1268, 
+        "OS/2": 96, 
+        "fpgm": 2928, 
+        "hhea": 36, 
+        "prep": 145, 
+        "kern": 6240, 
+        "hmtx": 1798, 
+        "cmap": 5608, 
+        "glyf": 60086, 
+        "GPOS": 4360, 
+        "gasp": 8, 
+        "post": 32, 
+        "maxp": 32, 
+        "cvt ": 98
+      }, 
+      "YesevaOne-Regular.ttf": {
+        "GDEF": 46, 
+        "head": 54, 
+        "loca": 900, 
+        "name": 1322, 
+        "OS/2": 96, 
+        "fpgm": 2928, 
+        "gasp": 8, 
+        "hhea": 36, 
+        "prep": 145, 
+        "hmtx": 1796, 
+        "GSUB": 126, 
+        "glyf": 79078, 
+        "GPOS": 4348, 
+        "cmap": 672, 
+        "post": 32, 
+        "maxp": 32, 
+        "cvt ": 98
+      }
+    }
+  ]
+}

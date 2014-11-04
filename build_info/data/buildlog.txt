@@ -1,0 +1,851 @@
+
+
+
+# Bake Begins!
+
+
+
+
+### (1 of 6) Copy sources
+
+$ cp -a /home/travis/build/fontdirectory/yesevaone/METADATA.json /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246
+
+$ cp -a /home/travis/build/fontdirectory/yesevaone/OFL.txt /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/OFL.txt
+
+$ cp -a /home/travis/build/fontdirectory/yesevaone/DESCRIPTION.en_us.html /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246
+
+$ cp -a YesevaOne-Regular.ttf.ttx src/YesevaOne-Regular_v2.otf.ttx src/YesevaOne-Regular_v2.ttf.ttx YesevaOne-Regular.ttf._h_h_e_a.ttx YesevaOne-Regular.ttf._l_o_c_a.ttx YesevaOne-Regular.ttf._p_o_s_t.ttx YesevaOne-Regular.ttf._c_m_a_p.ttx YesevaOne-Regular.ttf.O_S_2f_2.ttx YesevaOne-Regular.ttf._g_a_s_p.ttx YesevaOne-Regular.ttf.GlyphOrder.ttx YesevaOne-Regular.ttf._n_a_m_e.ttx YesevaOne-Regular.ttf._g_l_y_f.ttx YesevaOne-Regular.ttf._h_m_t_x.ttx YesevaOne-Regular.ttf._m_a_x_p.ttx YesevaOne-Regular.ttf._h_e_a_d.ttx YesevaOne-Regular.ttf._p_r_e_p.ttx YesevaOne-Regular.ttf._c_v_t.ttx YesevaOne-Regular.ttf._k_e_r_n.ttx YesevaOne-Regular.ttf._f_p_g_m.ttx YesevaOne-Regular.ttf.G_P_O_S_.ttx src/YesevaOne-Regular_v2.otf._m_a_x_p.ttx src/YesevaOne-Regular_v2.otf._h_e_a_d.ttx src/YesevaOne-Regular_v2.otf.G_S_U_B_.ttx src/YesevaOne-Regular_v2.otf._c_m_a_p.ttx src/YesevaOne-Regular_v2.otf._k_e_r_n.ttx src/YesevaOne-Regular_v2.otf.O_S_2f_2.ttx src/YesevaOne-Regular_v2.otf._h_m_t_x.ttx src/YesevaOne-Regular_v2.otf.C_F_F_.ttx src/YesevaOne-Regular_v2.otf._h_h_e_a.ttx src/YesevaOne-Regular_v2.otf.G_P_O_S_.ttx src/YesevaOne-Regular_v2.otf._p_o_s_t.ttx src/YesevaOne-Regular_v2.otf._n_a_m_e.ttx src/YesevaOne-Regular_v2.otf.GlyphOrder.ttx src/YesevaOne-Regular_v2.ttf._n_a_m_e.ttx src/YesevaOne-Regular_v2.ttf._l_o_c_a.ttx src/YesevaOne-Regular_v2.ttf._h_h_e_a.ttx src/YesevaOne-Regular_v2.ttf.O_S_2f_2.ttx src/YesevaOne-Regular_v2.ttf.GlyphOrder.ttx src/YesevaOne-Regular_v2.ttf._c_v_t.ttx src/YesevaOne-Regular_v2.ttf._h_e_a_d.ttx src/YesevaOne-Regular_v2.ttf._m_a_x_p.ttx src/YesevaOne-Regular_v2.ttf._f_p_g_m.ttx src/YesevaOne-Regular_v2.ttf._g_l_y_f.ttx src/YesevaOne-Regular_v2.ttf._c_m_a_p.ttx src/YesevaOne-Regular_v2.ttf._g_a_s_p.ttx src/YesevaOne-Regular_v2.ttf._p_o_s_t.ttx src/YesevaOne-Regular_v2.ttf._h_m_t_x.ttx src/YesevaOne-Regular_v2.ttf._p_r_e_p.ttx src/YesevaOne-Regular_v2.ttf.G_P_O_S_.ttx src/YesevaOne-Regular_v2.ttf._k_e_r_n.ttx /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources
+
+
+
+### (2 of 6) Run upstream tests
+
+$ fontbakery-check.py upstream-repo sources
+
+note: OK: bakery_lint/tests/upstream/test_any_diacritic.py: TestDiacritic.test_diacritic_made_as_component():  Check that diacritic glyph are made completely with composite 
+
+note: OK: bakery_lint/tests/upstream/test_any_diacritic.py: TestDiacritic.test_diacritic_made_as_mark_to_mark():  Check that diacritic glyph are made completely with mark method 
+
+note: OK: bakery_lint/tests/upstream/test_any_diacritic.py: TestDiacritic.test_diacritic_made_as_own_glyphs():  Check that diacritic glyph are made completely with flat method 
+File `bakery.yaml` does not exist in root of upstream repository
+note: FAIL: bakery_lint/tests/upstream/test_repo.py: TestUpstreamRepo.test_bakery_yaml_exists():  Repository contains bakery.yaml configuration file? : File `bakery.yaml` does not exist in root of upstream repository
+
+note: OK: bakery_lint/tests/upstream/test_repo.py: TestUpstreamRepo.test_copyright_notices_same_across_family():  Each font copyright notice matches? 
+
+note: OK: bakery_lint/tests/upstream/test_repo.py: TestUpstreamRepo.test_description_html_exists():  Repository contains DESCRIPTION.en_us.html file? 
+File `FONTLOG.txt` does not exist in root of upstream repository
+note: FAIL: bakery_lint/tests/upstream/test_repo.py: TestUpstreamRepo.test_fontlog_txt_exists():  Repository contains FONTLOG.txt file? : File `FONTLOG.txt` does not exist in root of upstream repository
+
+note: OK: bakery_lint/tests/upstream/test_repo.py: TestUpstreamRepo.test_metadata_json_exists():  Repository contains METADATA.json file? 
+
+note: OK: bakery_lint/tests/upstream/test_any_glyphs_prepolate.py: FontTestPrepolation.test_family_glyph_names_match():  Each font in family has matching glyph names? 
+
+note: OK: bakery_lint/tests/upstream/test_any_glyphs_prepolate.py: FontTestPrepolation.test_font_prepolation_glyph_contours():  Check that glyphs has same number of contours across family 
+
+note: OK: bakery_lint/tests/upstream/test_any_glyphs_prepolate.py: FontTestPrepolation.test_font_prepolation_glyph_points():  Check that glyphs has same number of points across family 
+
+$ fontbakery-check.py upstream-ttx YesevaOne-Regular.ttf.ttx
+'YesevaOne-Regular.ttf' != 'Yeseva-One'
+note: FAIL: bakery_lint/tests/upstream/test_ttx_font_filename_eq_familystyle.py: TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle():  Source TTF Font filename equals family style : 'YesevaOne-Regular.ttf' != 'Yeseva-One'
+
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/YesevaOne-Regular.ttf.ttx /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/Yeseva-One.ttx
+'YesevaOne-Regular.ttf' != 'Yeseva-One'
+note: OK: bakery_lint/tests/upstream/test_ttx_font_filename_eq_familystyle.py: TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle():  Source TTF Font filename equals family style : 'YesevaOne-Regular.ttf' != 'Yeseva-One'
+
+note: OK: bakery_lint/tests/upstream/test_ttx_fontfamily_recommendations.py: TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation():  The font corresponds the font family naming recommendation.
+        See http://forum.fontlab.com/index.php?topic=313.0 
+Glyph ".null" does not comply conventions. A glyph name may be up to 31 characters in length, must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or period. The only exception is the special character ".notdef". "twocents", "a1", and "_" are valid glyph names. "2cents" and ".twocents" are not.
+note: FAIL: bakery_lint/tests/upstream/test_ttx_glyphnames_clean.py: TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars():  GlyphName length < 30 and does contain allowed chars only : Glyph ".null" does not comply conventions. A glyph name may be up to 31 characters in length, must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or period. The only exception is the special character ".notdef". "twocents", "a1", and "_" are valid glyph names. "2cents" and ".twocents" are not.
+'EPAR' not found in ['GlyphOrder', 'head', 'hhea', 'maxp', 'OS/2', 'hmtx', 'cmap', 'fpgm', 'prep', 'cvt ', 'loca', 'glyf', 'kern', 'name', 'post', 'gasp', 'GPOS']
+note: FAIL: bakery_lint/tests/upstream/test_ttx_requirements.py: SourceTTXTest.test_epar_in_keys():  EPAR table present in font? : 'EPAR' not found in ['GlyphOrder', 'head', 'hhea', 'maxp', 'OS/2', 'hmtx', 'cmap', 'fpgm', 'prep', 'cvt ', 'loca', 'glyf', 'kern', 'name', 'post', 'gasp', 'GPOS']
+
+note: OK: bakery_lint/tests/upstream/test_ttx_requirements.py: SourceTTXTest.test_ttx_duplicate_glyphs():  Font contains unique glyph names?
+            (Duplicate glyph names prevent font installation on Mac OS X.)
+        
+
+$ fontbakery-check.py upstream-ttx YesevaOne-Regular_v2.otf.ttx
+'YesevaOne-Regular_v2.otf' != 'YesevaOne-Regular'
+note: FAIL: bakery_lint/tests/upstream/test_ttx_font_filename_eq_familystyle.py: TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle():  Source TTF Font filename equals family style : 'YesevaOne-Regular_v2.otf' != 'YesevaOne-Regular'
+
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/YesevaOne-Regular_v2.otf.ttx /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/YesevaOne-Regular.ttx
+'YesevaOne-Regular_v2.otf' != 'YesevaOne-Regular'
+note: OK: bakery_lint/tests/upstream/test_ttx_font_filename_eq_familystyle.py: TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle():  Source TTF Font filename equals family style : 'YesevaOne-Regular_v2.otf' != 'YesevaOne-Regular'
+
+note: OK: bakery_lint/tests/upstream/test_ttx_fontfamily_recommendations.py: TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation():  The font corresponds the font family naming recommendation.
+        See http://forum.fontlab.com/index.php?topic=313.0 
+
+note: OK: bakery_lint/tests/upstream/test_ttx_glyphnames_clean.py: TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars():  GlyphName length < 30 and does contain allowed chars only 
+'EPAR' not found in ['GlyphOrder', 'head', 'hhea', 'maxp', 'OS/2', 'name', 'cmap', 'post', 'CFF ', 'GPOS', 'GSUB', 'hmtx', 'kern']
+note: FAIL: bakery_lint/tests/upstream/test_ttx_requirements.py: SourceTTXTest.test_epar_in_keys():  EPAR table present in font? : 'EPAR' not found in ['GlyphOrder', 'head', 'hhea', 'maxp', 'OS/2', 'name', 'cmap', 'post', 'CFF ', 'GPOS', 'GSUB', 'hmtx', 'kern']
+
+note: OK: bakery_lint/tests/upstream/test_ttx_requirements.py: SourceTTXTest.test_ttx_duplicate_glyphs():  Font contains unique glyph names?
+            (Duplicate glyph names prevent font installation on Mac OS X.)
+        
+
+$ fontbakery-check.py upstream-ttx YesevaOne-Regular_v2.ttf.ttx
+'YesevaOne-Regular_v2.ttf' != 'Yeseva-One'
+note: FAIL: bakery_lint/tests/upstream/test_ttx_font_filename_eq_familystyle.py: TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle():  Source TTF Font filename equals family style : 'YesevaOne-Regular_v2.ttf' != 'Yeseva-One'
+
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/YesevaOne-Regular_v2.ttf.ttx /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/Yeseva-One.ttx
+'YesevaOne-Regular_v2.ttf' != 'Yeseva-One'
+note: OK: bakery_lint/tests/upstream/test_ttx_font_filename_eq_familystyle.py: TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle():  Source TTF Font filename equals family style : 'YesevaOne-Regular_v2.ttf' != 'Yeseva-One'
+
+note: OK: bakery_lint/tests/upstream/test_ttx_fontfamily_recommendations.py: TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation():  The font corresponds the font family naming recommendation.
+        See http://forum.fontlab.com/index.php?topic=313.0 
+Glyph ".null" does not comply conventions. A glyph name may be up to 31 characters in length, must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or period. The only exception is the special character ".notdef". "twocents", "a1", and "_" are valid glyph names. "2cents" and ".twocents" are not.
+note: FAIL: bakery_lint/tests/upstream/test_ttx_glyphnames_clean.py: TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars():  GlyphName length < 30 and does contain allowed chars only : Glyph ".null" does not comply conventions. A glyph name may be up to 31 characters in length, must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or period. The only exception is the special character ".notdef". "twocents", "a1", and "_" are valid glyph names. "2cents" and ".twocents" are not.
+'EPAR' not found in ['GlyphOrder', 'head', 'hhea', 'maxp', 'OS/2', 'hmtx', 'cmap', 'fpgm', 'prep', 'cvt ', 'loca', 'glyf', 'kern', 'name', 'post', 'gasp', 'GPOS']
+note: FAIL: bakery_lint/tests/upstream/test_ttx_requirements.py: SourceTTXTest.test_epar_in_keys():  EPAR table present in font? : 'EPAR' not found in ['GlyphOrder', 'head', 'hhea', 'maxp', 'OS/2', 'hmtx', 'cmap', 'fpgm', 'prep', 'cvt ', 'loca', 'glyf', 'kern', 'name', 'post', 'gasp', 'GPOS']
+
+note: OK: bakery_lint/tests/upstream/test_ttx_requirements.py: SourceTTXTest.test_ttx_duplicate_glyphs():  Font contains unique glyph names?
+            (Duplicate glyph names prevent font installation on Mac OS X.)
+        
+
+
+
+### (3 of 6) Convert sources to TTF
+
+$ ttx /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/YesevaOne-Regular.ttx /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/Yeseva-One.ttx
+
+$ fontbakery-build-font2ttf.py sources/YesevaOne-Regular.otf YesevaOne-Regular.ttf
+This font contains both a 'kern' table and a 'GPOS' table.
+  The 'kern' table will only be read if there is no 'kern' feature in 'GPOS'.
+Warning: Mac and Windows entries in the 'name' table differ for the
+ Fullname string in the language English (US)
+ Mac String: Yeseva One
+Windows String: YesevaOne
+In YesevaOne, the advance width (65307) for glyph nbspace is greater than the maximum (1305)
+  Subsequent errors will not be reported.
+In YesevaOne, in glyph nbspace, 'CFF ' advance width (-229) and
+  'hmtx' width (65307) do not match. (Subsequent mismatches will not be reported)
+Success: Generated OpenType-TTF (/home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/YesevaOne-Regular.ttf)
+
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/YesevaOne-Regular.ttf /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+
+
+
+### Subset TTFs (pyftsubset) YesevaOne-Regular.ttf
+
+$ pyftsubset YesevaOne-Regular.latin
+
+$ pyftsubset YesevaOne-Regular.menu
+
+
+
+### Test YesevaOne-Regular.ttf
+
+$ fontbakery-check.py result YesevaOne-Regular.ttf
+4 != 0
+required: FAIL: bakery_lint/tests/downstream/test_check_font_agreements.py: CheckFsTypeIsNotSet.test_is_fstype_not_set():  Is the OS/2 table fsType set to 0? : 4 != 0
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+4 != 0
+required: OK: bakery_lint/tests/downstream/test_check_font_agreements.py: CheckFsTypeIsNotSet.test_is_fstype_not_set():  Is the OS/2 table fsType set to 0? : 4 != 0
+
+note: OK: bakery_lint/tests/downstream/test_check_font_agreements.py: CheckFontAgreements.test_em_is_1000():  Font em size should be 1000, but doesn't have to be 
+
+note: OK: bakery_lint/tests/downstream/test_check_font_agreements.py: CheckFontAgreements.test_font_is_font():  File provided as parameter is TTF font file 
+
+required: OK: bakery_lint/tests/downstream/test_check_font_agreements.py: CheckFontAgreements.test_latin_file_exists():  GF requires a latin subset, so we check that font file exists 
+
+required: OK: bakery_lint/tests/downstream/test_check_font_agreements.py: CheckFontAgreements.test_menu_file_exists():  GF requires a menu subset, so we check that font file exists 
+
+note: OK: bakery_lint/tests/downstream/test_check_vertical_metrics.py: CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero():  Check that linegaps in tables are zero 
+[sources/Yeseva-One.ttf, YesevaOne-Regular.ttf] ascents differ to maximum value: 940
+note: FAIL: bakery_lint/tests/downstream/test_check_vertical_metrics.py: CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox():  Check that ascents values are same as max glyph point : [sources/Yeseva-One.ttf, YesevaOne-Regular.ttf] ascents differ to maximum value: 940
+$ fontbakery-fix-vertical-metrics.py --autofix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/Yeseva-One.ttf
+
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/Yeseva-One.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/Yeseva-One.ttf
+$ fontbakery-fix-vertical-metrics.py /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/Yeseva-One.ttf
+Parameter              YesevaOne-Regular.ttf    Yeseva-One.ttf    
+ymax                   940                      940               
+hhea.ascent            940                      940               
+OS/2.sTypoAscender     940                      940               
+OS/2.usWinAscent       940                      940               
+ymin                   -310                     -309              
+hhea.descent           -310                     -310              
+OS/2.sTypoDescender    -310                     -310              
+OS/2.usWinDescent      310                      310               
+hhea.lineGap           0                        0                 
+OS/2.sTypoLineGap      0                        0                 
+hhea total             1250                     1250              
+typo total             1250                     1250              
+win total              1250                     1250              
+UPM:Heights            1000:1250                1000:1249         
+UPM:Heights %          125 %                    124 %             
+
+
+[sources/Yeseva-One.ttf, YesevaOne-Regular.ttf] ascents differ to maximum value: 940
+note: OK: bakery_lint/tests/downstream/test_check_vertical_metrics.py: CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox():  Check that ascents values are same as max glyph point : [sources/Yeseva-One.ttf, YesevaOne-Regular.ttf] ascents differ to maximum value: 940
+
+note: OK: bakery_lint/tests/downstream/test_check_vertical_metrics.py: CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox():  Check that descents values are same as min glyph point 
+There should not be unencoded glyphs
+note: FAIL: bakery_lint/tests/downstream/test_check_unencoded_glyph.py: TestFontUnencodedGlyph.test_font_unencoded_glyphs():  Font does not have unencoded glyphs : There should not be unencoded glyphs
+$ fontbakery-fix-glyph-private-encoding.py --autofix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+There should not be unencoded glyphs
+note: FAIL: bakery_lint/tests/downstream/test_check_unencoded_glyph.py: TestFontUnencodedGlyph.test_font_unencoded_glyphs():  Font does not have unencoded glyphs : There should not be unencoded glyphs
+Full font name does not begin with family name: FontFamilyName = "Yeseva One"; FullFontName = "YesevaOne"
+note: FAIL: bakery_lint/tests/downstream/test_check_full_font_name_begins_with_family_name.py: CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name():  Check if full font name begins with the font family name : Full font name does not begin with family name: FontFamilyName = "Yeseva One"; FullFontName = "YesevaOne"
+
+note: OK: bakery_lint/tests/downstream/test_names_are_ascii_only.py: CheckNamesAreASCIIOnly.test_check_names_are_ascii_only():  NAME and CFF tables must not contain non-ascii characters 
+Glyf table has unreachable data at the end of the table. Expected glyf table length 900 (from loca table), got length 45552 (difference: 44652)
+note: FAIL: bakery_lint/tests/downstream/test_check_glyf_table_length.py: CheckGlyfTableLength.test_check_glyf_table_length():  Check if there is unused data at the end of the glyf table : Glyf table has unreachable data at the end of the table. Expected glyf table length 900 (from loca table), got length 45552 (difference: 44652)
+True is not false
+note: FAIL: bakery_lint/tests/downstream/test_license_related_nameid.py: TestNameIdCopyright.test_name_id_copyright():  Is there `opyright` substring nameID in nameId (10) ? : True is not false
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+True is not false
+note: OK: bakery_lint/tests/downstream/test_license_related_nameid.py: TestNameIdCopyright.test_name_id_copyright():  Is there `opyright` substring nameID in nameId (10) ? : True is not false
+License file OFL.txt exists but NameID value is not specified for that
+note: FAIL: bakery_lint/tests/downstream/test_license_related_nameid.py: TestNameIdOFLLicense.test_name_id_of_license():  Is there OFL in nameId (13) ? : License file OFL.txt exists but NameID value is not specified for that
+SETTING UP: This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at http://scripts.sil.org/OFL
+
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+License file OFL.txt exists but NameID value is not specified for that
+note: OK: bakery_lint/tests/downstream/test_license_related_nameid.py: TestNameIdOFLLicense.test_name_id_of_license():  Is there OFL in nameId (13) ? : License file OFL.txt exists but NameID value is not specified for that
+True is not false
+note: FAIL: bakery_lint/tests/downstream/test_license_related_nameid.py: TestNameIdOFLLicenseURL.test_name_id_of_license_url():  Is there OFL in nameId (13) ? : True is not false
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+True is not false
+note: OK: bakery_lint/tests/downstream/test_license_related_nameid.py: TestNameIdOFLLicenseURL.test_name_id_of_license_url():  Is there OFL in nameId (13) ? : True is not false
+
+note: OK: bakery_lint/tests/downstream/test_license_related_nameid.py: TestNameIdApacheLicense.test_name_id_apache_license():  Is there Apache in nameId (13) ? 
+
+note: OK: bakery_lint/tests/downstream/test_license_related_nameid.py: TestNameIdApacheLicenseURL.test_name_id_apache_license_url():  Is there OFL in nameId (13) ? 
+
+note: OK: bakery_lint/tests/downstream/test_check_font_tables.py: CheckFontHasDsigTable.test_check_font_has_dsig_table():  Check that font has DSIG table 
+
+note: OK: bakery_lint/tests/downstream/test_check_font_tables.py: CheckFontHasNotKernTable.test_no_kern_table_exists():  Check that no "KERN" table exists 
+
+required: OK: bakery_lint/tests/downstream/test_check_italic_angle_agreement.py: CheckItalicAngleAgreement.test_check_italic_angle_agreement():  Check italicangle property zero or negative 
+The nbsp advance width does not match the space advance width
+required: FAIL: bakery_lint/tests/downstream/test_check_nbsp_width_matches_sp_width.py: CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width():  Check non-breaking space's advancewidth is the same as space : The nbsp advance width does not match the space advance width
+$ fontbakery-fix-nbsp.py /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+The nbsp advance width does not match the space advance width
+required: OK: bakery_lint/tests/downstream/test_check_nbsp_width_matches_sp_width.py: CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width():  Check non-breaking space's advancewidth is the same as space : The nbsp advance width does not match the space advance width
+
+note: OK: bakery_lint/tests/downstream/test_check_no_problematic_formats.py: CheckNoProblematicFormats.test_check_no_problematic_formats():  Check that font contain required tables 
+'' not found in ['Regular', 'Italic', 'Bold', 'Bold Italic']
+note: FAIL: bakery_lint/tests/downstream/test_check_name_table_recommendation.py: CheckOTStyleNameRecommendation.test_check_stylename_is_under_recommendations():  Style name must be equal to one of the following four
+            values: "Regular", "Italic", "Bold" or "Bold Italic" : '' not found in ['Regular', 'Italic', 'Bold', 'Bold Italic']
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+'' not found in ['Regular', 'Italic', 'Bold', 'Bold Italic']
+note: OK: bakery_lint/tests/downstream/test_check_name_table_recommendation.py: CheckOTStyleNameRecommendation.test_check_stylename_is_under_recommendations():  Style name must be equal to one of the following four
+            values: "Regular", "Italic", "Bold" or "Bold Italic" : '' not found in ['Regular', 'Italic', 'Bold', 'Bold Italic']
+
+note: OK: bakery_lint/tests/downstream/test_check_name_table_recommendation.py: CheckOTFamilyNameRecommendation.test_check_opentype_familyname():  OT Family Name for Windows should be equal to Family Name 
+
+note: OK: bakery_lint/tests/downstream/test_check_name_table_recommendation.py: CheckOTFullNameRecommendation.test_check_opentype_fullname():  Full name matches Windows-only Opentype-specific FullName 
+
+note: OK: bakery_lint/tests/downstream/test_check_name_table_recommendation.py: CheckSuggestedSubfamilyName.test_suggested_subfamily_name():  Family does not contain subfamily in `name` table 
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs():  Composite glyphs have allowed numbers of paths defined in maxp 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs():  Glyphs have allowed numbers of paths defined in maxp 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs():  Composite glyphs have allowed numbers of points defined in maxp 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs():  Glyphs have allowed numbers of points defined in maxp 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_duplicate_glyphs():  Glyph names are unique. 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_duplicate_unicode_codepoints():  Unicode code points are unique. 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_flipped_reference_in_glyphs():  References in the glyph haven't been flipped 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_missing_anchors():  Glyphs have all required anchors.
+            (According to the opentype spec, if a glyph contains an anchor point
+            for one anchor class in a subtable, it must contain anchor points
+            for all anchor classes in the subtable. Even it, logically,
+            they do not apply and are unnecessary.) 
+True is not false
+note: FAIL: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_missing_extrema_in_glyphs():  Glyphs have points at extremas : True is not false
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_overlapped_hints():  Hints do not overlap 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_points_are_integer_aligned():  Points in glyphs are integer aligned 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_points_are_not_too_far_apart():  Points (or control points) are not too far apart 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs():  PostScript hasnt a limit of 96 hints in glyphs 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs():  Not more than 1,500 points in any glyph (a PostScript limit) 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_referenced_glyphs_are_present():  Glyph names referred to from glyphs present in the font 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_valid_glyph_names():  Font doesn't have invalid glyph names 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_valid_length_instructions():  Glyphs instructions have valid lengths 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_validation_glyph_intersect():  Contours do not intersect 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_validation_open_contours():  Contours are closed 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_wrong_direction_in_glyphs():  Contours have correct directions 
+UPM:Height is 125%, consider redesigning to 120% or less
+note: FAIL: bakery_lint/tests/downstream/test_check_upm_heights_less_120.py: TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120():  Check if UPM Heights NOT more than 120% : UPM:Height is 125%, consider redesigning to 120% or less
+
+required: OK: bakery_lint/tests/downstream/test_check_names_same_across_platforms.py: CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms():  Font names are same across specific-platforms 
+PREP does not contain magic code
+note: FAIL: bakery_lint/tests/downstream/test_check_magic_prep_code.py: CheckMagicPREPByteCode.test_prep_magic_code():  Font contains in PREP table magic code : PREP does not contain magic code
+
+note: OK: bakery_lint/tests/downstream/test_check_os2_width_class.py: CheckOS2WidthClass.test_check_os2_width_class(): 
+
+required: OK: bakery_lint/tests/downstream/test_check_license_included.py: CheckLicenseIncluded.test_license_included_in_font_names():  Check font has a correct license url 
+
+note: OK: bakery_lint/tests/downstream/test_check_panose_identification.py: CheckPanoseIdentification.test_check_panose_identification():  Check if Panose is not set to monospaced if advancewidth of
+            all glyphs is not equal to each others 
+
+note: OK: bakery_lint/tests/downstream/test_check_glyph_existence.py: CheckGlyphExistence.test_euro():  Check if 'EURO SIGN' exists 
+
+required: OK: bakery_lint/tests/downstream/test_check_glyph_existence.py: CheckGlyphExistence.test_nbsp():  Check if 'NO-BREAK SPACE' exists
+
+required: OK: bakery_lint/tests/downstream/test_check_glyph_existence.py: CheckGlyphExistence.test_space():  Check if 'SPACE' exists 
+
+note: OK: bakery_lint/tests/downstream/test_gpos_table_has_kerning_info.py: CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info():  GPOS table has kerning information 
+
+required: OK: bakery_lint/tests/downstream/test_check_font_sanitized_for_chrome_and_firefox.py: OTSTest.test_ots():  Is TTF file correctly sanitized for Firefox and Chrome 
+
+note: OK: bakery_lint/tests/downstream/test_check_hmtx_hhea_max_advance_width_agreement.py: CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement():  Check if MaxAdvanceWidth agree in the Hmtx and Hhea tables 
+macStyle (b0) supposed style ended with "Regular"
+note: FAIL: bakery_lint/tests/downstream/test_check_fontname_matches_macstyle.py: CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle():  Check that fontname is equal to macstyle flags : macStyle (b0) supposed style ended with "Regular"
+gaspRange[65535] value is not 15
+note: FAIL: bakery_lint/tests/downstream/test_gasp_table_value.py: CheckGaspTableType.test_check_gasp_table_type():  Font table gasp should be 15 : gaspRange[65535] value is not 15
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+gaspRange[65535] value is not 15
+note: OK: bakery_lint/tests/downstream/test_gasp_table_value.py: CheckGaspTableType.test_check_gasp_table_type():  Font table gasp should be 15 : gaspRange[65535] value is not 15
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+
+
+
+### Optimize TTF YesevaOne-Regular.ttf
+Before: ['GlyphOrder', 'head', 'hhea', 'maxp', 'OS/2', 'hmtx', 'cmap', 'loca', 'glyf', 'name', 'post', 'gasp', 'FFTM', 'GDEF', 'GPOS', 'GSUB', 'DSIG']
+{'notdef_outline': True, 'name_IDs': ['*'], 'layout_features': ['*'], 'hinting': True, 'legacy_kern': True}
+
+$ ls -l 'YesevaOne-Regular.ttf'* # look at the size savings of that subset process
+YesevaOne-Regular.ttf.opt: 54544 bytes
+YesevaOne-Regular.ttf: 59036 bytes
+
+Now: ['GlyphOrder', 'head', 'hhea', 'maxp', 'OS/2', 'hmtx', 'cmap', 'loca', 'glyf', 'name', 'post', 'gasp', 'GDEF', 'GPOS', 'GSUB']
+
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf.opt /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+
+
+
+### Autohint TTFs (ttfautohint) YesevaOne-Regular.ttf
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf '/home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.autohint.ttf'
+
+
+$ ls -l /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf: 54544 bytes
+/home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.autohint.ttf: 92016 bytes
+
+
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.autohint.ttf /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/Yeseva-One.ttf /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+
+
+
+### Subset TTFs (pyftsubset) Yeseva-One.ttf
+
+$ pyftsubset Yeseva-One.latin
+
+$ pyftsubset Yeseva-One.menu
+
+
+
+### Test Yeseva-One.ttf
+
+$ fontbakery-check.py result Yeseva-One.ttf
+4 != 0
+required: FAIL: bakery_lint/tests/downstream/test_check_font_agreements.py: CheckFsTypeIsNotSet.test_is_fstype_not_set():  Is the OS/2 table fsType set to 0? : 4 != 0
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+4 != 0
+required: OK: bakery_lint/tests/downstream/test_check_font_agreements.py: CheckFsTypeIsNotSet.test_is_fstype_not_set():  Is the OS/2 table fsType set to 0? : 4 != 0
+
+note: OK: bakery_lint/tests/downstream/test_check_font_agreements.py: CheckFontAgreements.test_em_is_1000():  Font em size should be 1000, but doesn't have to be 
+
+note: OK: bakery_lint/tests/downstream/test_check_font_agreements.py: CheckFontAgreements.test_font_is_font():  File provided as parameter is TTF font file 
+
+required: OK: bakery_lint/tests/downstream/test_check_font_agreements.py: CheckFontAgreements.test_latin_file_exists():  GF requires a latin subset, so we check that font file exists 
+
+required: OK: bakery_lint/tests/downstream/test_check_font_agreements.py: CheckFontAgreements.test_menu_file_exists():  GF requires a menu subset, so we check that font file exists 
+
+note: OK: bakery_lint/tests/downstream/test_check_vertical_metrics.py: CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero():  Check that linegaps in tables are zero 
+
+note: OK: bakery_lint/tests/downstream/test_check_vertical_metrics.py: CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox():  Check that ascents values are same as max glyph point 
+
+note: OK: bakery_lint/tests/downstream/test_check_vertical_metrics.py: CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox():  Check that descents values are same as min glyph point 
+There should not be unencoded glyphs
+note: FAIL: bakery_lint/tests/downstream/test_check_unencoded_glyph.py: TestFontUnencodedGlyph.test_font_unencoded_glyphs():  Font does not have unencoded glyphs : There should not be unencoded glyphs
+$ fontbakery-fix-glyph-private-encoding.py --autofix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+There should not be unencoded glyphs
+note: FAIL: bakery_lint/tests/downstream/test_check_unencoded_glyph.py: TestFontUnencodedGlyph.test_font_unencoded_glyphs():  Font does not have unencoded glyphs : There should not be unencoded glyphs
+
+note: OK: bakery_lint/tests/downstream/test_check_full_font_name_begins_with_family_name.py: CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name():  Check if full font name begins with the font family name 
+
+note: OK: bakery_lint/tests/downstream/test_names_are_ascii_only.py: CheckNamesAreASCIIOnly.test_check_names_are_ascii_only():  NAME and CFF tables must not contain non-ascii characters 
+Kerning pairs to total glyphs is 450:1037
+info: FAIL: bakery_lint/tests/downstream/test_kerning_pairs.py: TestKerningPairs.test_kerning_pairs():  Number of kerning pairs? : Kerning pairs to total glyphs is 450:1037
+Glyf table has unreachable data at the end of the table. Expected glyf table length 902 (from loca table), got length 77010 (difference: 76108)
+note: FAIL: bakery_lint/tests/downstream/test_check_glyf_table_length.py: CheckGlyfTableLength.test_check_glyf_table_length():  Check if there is unused data at the end of the glyf table : Glyf table has unreachable data at the end of the table. Expected glyf table length 902 (from loca table), got length 77010 (difference: 76108)
+True is not false
+note: FAIL: bakery_lint/tests/downstream/test_license_related_nameid.py: TestNameIdCopyright.test_name_id_copyright():  Is there `opyright` substring nameID in nameId (10) ? : True is not false
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+True is not false
+note: OK: bakery_lint/tests/downstream/test_license_related_nameid.py: TestNameIdCopyright.test_name_id_copyright():  Is there `opyright` substring nameID in nameId (10) ? : True is not false
+License file OFL.txt exists but NameID value is not specified for that
+note: FAIL: bakery_lint/tests/downstream/test_license_related_nameid.py: TestNameIdOFLLicense.test_name_id_of_license():  Is there OFL in nameId (13) ? : License file OFL.txt exists but NameID value is not specified for that
+SETTING UP: This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at http://scripts.sil.org/OFL
+
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+License file OFL.txt exists but NameID value is not specified for that
+note: OK: bakery_lint/tests/downstream/test_license_related_nameid.py: TestNameIdOFLLicense.test_name_id_of_license():  Is there OFL in nameId (13) ? : License file OFL.txt exists but NameID value is not specified for that
+True is not false
+note: FAIL: bakery_lint/tests/downstream/test_license_related_nameid.py: TestNameIdOFLLicenseURL.test_name_id_of_license_url():  Is there OFL in nameId (13) ? : True is not false
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+True is not false
+note: OK: bakery_lint/tests/downstream/test_license_related_nameid.py: TestNameIdOFLLicenseURL.test_name_id_of_license_url():  Is there OFL in nameId (13) ? : True is not false
+
+note: OK: bakery_lint/tests/downstream/test_license_related_nameid.py: TestNameIdApacheLicense.test_name_id_apache_license():  Is there Apache in nameId (13) ? 
+
+note: OK: bakery_lint/tests/downstream/test_license_related_nameid.py: TestNameIdApacheLicenseURL.test_name_id_apache_license_url():  Is there OFL in nameId (13) ? 
+Font does not have "DSIG" table
+note: FAIL: bakery_lint/tests/downstream/test_check_font_tables.py: CheckFontHasDsigTable.test_check_font_has_dsig_table():  Check that font has DSIG table : Font does not have "DSIG" table
+$ fontbakery-fix-dsig.py /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+Font does not have "DSIG" table
+note: OK: bakery_lint/tests/downstream/test_check_font_tables.py: CheckFontHasDsigTable.test_check_font_has_dsig_table():  Check that font has DSIG table : Font does not have "DSIG" table
+
+note: OK: bakery_lint/tests/downstream/test_check_font_tables.py: CheckFontHasNotKernTable.test_no_kern_table_exists():  Check that no "KERN" table exists 
+
+required: OK: bakery_lint/tests/downstream/test_check_italic_angle_agreement.py: CheckItalicAngleAgreement.test_check_italic_angle_agreement():  Check italicangle property zero or negative 
+The nbsp advance width does not match the space advance width
+required: FAIL: bakery_lint/tests/downstream/test_check_nbsp_width_matches_sp_width.py: CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width():  Check non-breaking space's advancewidth is the same as space : The nbsp advance width does not match the space advance width
+$ fontbakery-fix-nbsp.py /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+The nbsp advance width does not match the space advance width
+required: OK: bakery_lint/tests/downstream/test_check_nbsp_width_matches_sp_width.py: CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width():  Check non-breaking space's advancewidth is the same as space : The nbsp advance width does not match the space advance width
+
+note: OK: bakery_lint/tests/downstream/test_check_no_problematic_formats.py: CheckNoProblematicFormats.test_check_no_problematic_formats():  Check that font contain required tables 
+'' not found in ['Regular', 'Italic', 'Bold', 'Bold Italic']
+note: FAIL: bakery_lint/tests/downstream/test_check_name_table_recommendation.py: CheckOTStyleNameRecommendation.test_check_stylename_is_under_recommendations():  Style name must be equal to one of the following four
+            values: "Regular", "Italic", "Bold" or "Bold Italic" : '' not found in ['Regular', 'Italic', 'Bold', 'Bold Italic']
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+'' not found in ['Regular', 'Italic', 'Bold', 'Bold Italic']
+note: OK: bakery_lint/tests/downstream/test_check_name_table_recommendation.py: CheckOTStyleNameRecommendation.test_check_stylename_is_under_recommendations():  Style name must be equal to one of the following four
+            values: "Regular", "Italic", "Bold" or "Bold Italic" : '' not found in ['Regular', 'Italic', 'Bold', 'Bold Italic']
+
+note: OK: bakery_lint/tests/downstream/test_check_name_table_recommendation.py: CheckOTFamilyNameRecommendation.test_check_opentype_familyname():  OT Family Name for Windows should be equal to Family Name 
+u'Yeseva Regular' != u'Yeseva One'
+- Yeseva Regular
++ Yeseva One
+
+note: FAIL: bakery_lint/tests/downstream/test_check_name_table_recommendation.py: CheckOTFullNameRecommendation.test_check_opentype_fullname():  Full name matches Windows-only Opentype-specific FullName : u'Yeseva Regular' != u'Yeseva One'
+- Yeseva Regular
++ Yeseva One
+
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+u'Yeseva Regular' != u'Yeseva One'
+- Yeseva Regular
++ Yeseva One
+
+note: FAIL: bakery_lint/tests/downstream/test_check_name_table_recommendation.py: CheckOTFullNameRecommendation.test_check_opentype_fullname():  Full name matches Windows-only Opentype-specific FullName : u'Yeseva Regular' != u'Yeseva One'
+- Yeseva Regular
++ Yeseva One
+
+
+note: OK: bakery_lint/tests/downstream/test_check_name_table_recommendation.py: CheckSuggestedSubfamilyName.test_suggested_subfamily_name():  Family does not contain subfamily in `name` table 
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+This font contains both a 'kern' table and a 'GPOS' table.
+  The 'kern' table will only be read if there is no 'kern' feature in 'GPOS'.
+Warning: Mac and Windows entries in the 'name' table differ for the
+ Compatible Full string in the language English (US)
+ Mac String: Yeseva One
+Windows String: Yeseva Regular
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs():  Composite glyphs have allowed numbers of paths defined in maxp 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs():  Glyphs have allowed numbers of paths defined in maxp 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs():  Composite glyphs have allowed numbers of points defined in maxp 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs():  Glyphs have allowed numbers of points defined in maxp 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_duplicate_glyphs():  Glyph names are unique. 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_duplicate_unicode_codepoints():  Unicode code points are unique. 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_flipped_reference_in_glyphs():  References in the glyph haven't been flipped 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_missing_anchors():  Glyphs have all required anchors.
+            (According to the opentype spec, if a glyph contains an anchor point
+            for one anchor class in a subtable, it must contain anchor points
+            for all anchor classes in the subtable. Even it, logically,
+            they do not apply and are unnecessary.) 
+True is not false
+note: FAIL: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_missing_extrema_in_glyphs():  Glyphs have points at extremas : True is not false
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_overlapped_hints():  Hints do not overlap 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_points_are_integer_aligned():  Points in glyphs are integer aligned 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_points_are_not_too_far_apart():  Points (or control points) are not too far apart 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs():  PostScript hasnt a limit of 96 hints in glyphs 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs():  Not more than 1,500 points in any glyph (a PostScript limit) 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_referenced_glyphs_are_present():  Glyph names referred to from glyphs present in the font 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_valid_glyph_names():  Font doesn't have invalid glyph names 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_valid_length_instructions():  Glyphs instructions have valid lengths 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_validation_glyph_intersect():  Contours do not intersect 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_validation_open_contours():  Contours are closed 
+
+note: OK: bakery_lint/tests/downstream/test_fontforge_validation_state.py: FontForgeValidateStateTest.test_wrong_direction_in_glyphs():  Contours have correct directions 
+UPM:Height is 125%, consider redesigning to 120% or less
+note: FAIL: bakery_lint/tests/downstream/test_check_upm_heights_less_120.py: TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120():  Check if UPM Heights NOT more than 120% : UPM:Height is 125%, consider redesigning to 120% or less
+Names in "name" table are not the same across specific-platforms
+required: FAIL: bakery_lint/tests/downstream/test_check_names_same_across_platforms.py: CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms():  Font names are same across specific-platforms : Names in "name" table are not the same across specific-platforms
+PREP does not contain magic code
+note: FAIL: bakery_lint/tests/downstream/test_check_magic_prep_code.py: CheckMagicPREPByteCode.test_prep_magic_code():  Font contains in PREP table magic code : PREP does not contain magic code
+
+note: OK: bakery_lint/tests/downstream/test_check_os2_width_class.py: CheckOS2WidthClass.test_check_os2_width_class(): 
+
+required: OK: bakery_lint/tests/downstream/test_check_license_included.py: CheckLicenseIncluded.test_license_included_in_font_names():  Check font has a correct license url 
+
+note: OK: bakery_lint/tests/downstream/test_check_panose_identification.py: CheckPanoseIdentification.test_check_panose_identification():  Check if Panose is not set to monospaced if advancewidth of
+            all glyphs is not equal to each others 
+
+note: OK: bakery_lint/tests/downstream/test_check_glyph_existence.py: CheckGlyphExistence.test_euro():  Check if 'EURO SIGN' exists 
+
+required: OK: bakery_lint/tests/downstream/test_check_glyph_existence.py: CheckGlyphExistence.test_nbsp():  Check if 'NO-BREAK SPACE' exists
+
+required: OK: bakery_lint/tests/downstream/test_check_glyph_existence.py: CheckGlyphExistence.test_space():  Check if 'SPACE' exists 
+
+note: OK: bakery_lint/tests/downstream/test_gpos_table_has_kerning_info.py: CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info():  GPOS table has kerning information 
+
+required: OK: bakery_lint/tests/downstream/test_check_font_sanitized_for_chrome_and_firefox.py: OTSTest.test_ots():  Is TTF file correctly sanitized for Firefox and Chrome 
+
+note: OK: bakery_lint/tests/downstream/test_check_hmtx_hhea_max_advance_width_agreement.py: CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement():  Check if MaxAdvanceWidth agree in the Hmtx and Hhea tables 
+macStyle (b0) supposed style ended with "Regular"
+note: FAIL: bakery_lint/tests/downstream/test_check_fontname_matches_macstyle.py: CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle():  Check that fontname is equal to macstyle flags : macStyle (b0) supposed style ended with "Regular"
+
+note: OK: bakery_lint/tests/downstream/test_gasp_table_value.py: CheckGaspTableType.test_check_gasp_table_type():  Font table gasp should be 15 
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf.fix /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+
+
+
+### Optimize TTF Yeseva-One.ttf
+Before: ['GlyphOrder', 'head', 'hhea', 'maxp', 'OS/2', 'hmtx', 'cmap', 'fpgm', 'prep', 'cvt ', 'loca', 'glyf', 'kern', 'name', 'post', 'gasp', 'GPOS', 'DSIG']
+{'notdef_outline': True, 'name_IDs': ['*'], 'layout_features': ['*'], 'hinting': True, 'legacy_kern': True}
+
+$ ls -l 'Yeseva-One.ttf'* # look at the size savings of that subset process
+Yeseva-One.ttf.opt: 100188 bytes
+Yeseva-One.ttf: 105020 bytes
+
+Now: ['GlyphOrder', 'head', 'hhea', 'maxp', 'OS/2', 'hmtx', 'cmap', 'fpgm', 'prep', 'cvt ', 'loca', 'glyf', 'kern', 'name', 'post', 'gasp', 'GPOS']
+
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf.opt /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+
+
+
+### Autohint TTFs (ttfautohint) Yeseva-One.ttf
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf '/home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.autohint.ttf'
+
+
+$ ls -l /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf: 100188 bytes
+/home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.autohint.ttf: 83972 bytes
+
+
+$ mv /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.autohint.ttf /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+
+
+
+### (4 of 6) Generate METADATA.json (fontbakery-build-metadata.py)
+
+$ fontbakery-build-metadata.py /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246
+{} exists
+
+Designer's name from font is: Jovanny Lemonad
+
+Original size: 92016\nGzip size: 42044
+
+Family Name: YesevaOne
+
+PS Name: YesevaOne-Regular
+
+Full Name: YesevaOne Regular
+
+Style: normal
+
+Weight: 400
+
+Filename: YesevaOne-Regular.ttf
+
+Copyright: Copyright (c) 2011-2012 by Jovanny Lemonad. All rights reserved.
+
+Family Name: YesevaOne
+
+PS Name: Yeseva-One
+
+Full Name: Yeseva One
+
+Style: normal
+
+Weight: 400
+
+Filename: Yeseva-One.ttf
+
+Copyright: Copyright (c) 2011-2012 by Jovanny Lemonad. All rights reserved.
+
+
+
+
+### (5 of 6) Run tests for METADATA.json
+
+$ fontbakery-check.py metadata METADATA.json
+
+required: OK: bakery_lint/tests/metadata_test.py: MetadataSubsetsListTest.test_charset_latin(): Yeseva-One.latin is real TrueType file
+
+required: OK: bakery_lint/tests/metadata_test.py: MetadataSubsetsListTest.test_charset_menu(): Yeseva-One.menu is real TrueType file
+DESCRIPTION.en_us.html must have size larger than 500 bytes
+note: FAIL: bakery_lint/tests/metadata_test.py: MetadataTest.test_description_is_more_than_500b():  DESCRIPTION.en_us.html is more than 500 bytes : DESCRIPTION.en_us.html must have size larger than 500 bytes
+DESCRIPTION.en_us.html is not real html file
+note: FAIL: bakery_lint/tests/metadata_test.py: MetadataTest.test_description_is_valid_html():  DESCRIPTION.en_us.html is not real html file : DESCRIPTION.en_us.html is not real html file
+False is not true
+note: FAIL: bakery_lint/tests/metadata_test.py: MetadataTest.test_does_not_familyName_exist_in_daltonmaag_catalogue():  DALTONMAAG.com : False is not true
+
+note: OK: bakery_lint/tests/metadata_test.py: MetadataTest.test_does_not_familyName_exist_in_fontbureau_catalogue():  FONTBUREAU.com 
+
+note: OK: bakery_lint/tests/metadata_test.py: MetadataTest.test_does_not_familyName_exist_in_fontscom_catalogue():  FONTS.com 
+False is not true
+note: FAIL: bakery_lint/tests/metadata_test.py: MetadataTest.test_does_not_familyName_exist_in_fontshop_catalogue():  FONTSHOP.com : False is not true
+False is not true
+note: FAIL: bakery_lint/tests/metadata_test.py: MetadataTest.test_does_not_familyName_exist_in_fontsmith_catalogue():  FONTSMITH.com : False is not true
+
+note: OK: bakery_lint/tests/metadata_test.py: MetadataTest.test_does_not_familyName_exist_in_houseind_catalogue():  HOUSEIND.com 
+
+note: OK: bakery_lint/tests/metadata_test.py: MetadataTest.test_does_not_familyName_exist_in_myfonts_catalogue():  MYFONTS.com 
+
+note: OK: bakery_lint/tests/metadata_test.py: MetadataTest.test_does_not_familyName_exist_in_veer_catalogue():  VEER.com 
+
+note: OK: bakery_lint/tests/metadata_test.py: MetadataTest.test_family_is_listed_in_gwf():  Fontfamily is listed in Google Font Directory 
+
+required: OK: bakery_lint/tests/metadata_test.py: MetadataTest.test_metadata_atleast_latin_menu_subsets_exist():  METADATA.json subsets should have at least 'menu' and 'latin' 
+
+required: OK: bakery_lint/tests/metadata_test.py: MetadataTest.test_metadata_designer_exists_in_profiles_csv():  Designer exists in GWF profiles.csv 
+
+required: OK: bakery_lint/tests/metadata_test.py: MetadataTest.test_metadata_fonts_items_dicts():  METADATA.json fonts key items are dicts 
+
+required: OK: bakery_lint/tests/metadata_test.py: MetadataTest.test_metadata_fonts_key_list():  METADATA.json font key should be list 
+
+note: OK: bakery_lint/tests/metadata_test.py: MetadataTest.test_metadata_fonts_no_dupes():  METADATA.json fonts propery only should have uniq values 
+u'normal:400' unexpectedly found in [u'normal:400']
+required: FAIL: bakery_lint/tests/metadata_test.py: MetadataTest.test_metadata_has_unique_style_weight_pairs():  METADATA.json only contains unique style:weight pairs : u'normal:400' unexpectedly found in [u'normal:400']
+
+required: OK: bakery_lint/tests/metadata_test.py: MetadataTest.test_metadata_keys():  METADATA.json should have top keys: ["name", "designer",
+            "license", "visibility", "category", "size", "dateAdded",
+            "fonts", "subsets"] 
+
+required: OK: bakery_lint/tests/metadata_test.py: MetadataTest.test_metadata_license():  METADATA.json license is 'Apache2', 'UFL' or 'OFL' 
+
+required: OK: bakery_lint/tests/metadata_test.py: MetadataTest.test_metadata_no_unknown_top_keys():  METADATA.json don't have unknown top keys 
+
+required: OK: bakery_lint/tests/metadata_test.py: MetadataTest.test_metadata_subsets_key_list():  METADATA.json subsets key should be list 
+
+required: OK: bakery_lint/tests/metadata_test.py: MetadataTest.test_metadata_top_keys_types():  METADATA.json should have proper top keys types 
+
+note: OK: bakery_lint/tests/downstream/test_check_subsets_exists.py: CheckSubsetsExist.test_check_subsets_exists():  Check that corresponding subset files exist for fonts 
+Unmatched family name are in fonts: Yeseva-One.ttf
+required: FAIL: bakery_lint/tests/downstream/test_metadata_agreements.py: TestFontOnDiskFamilyEqualToMetadataJSON.test_font_on_disk_family_equal_in_metadata_json():  Font on disk and in METADATA.json have the same family name : Unmatched family name are in fonts: Yeseva-One.ttf
+
+required: OK: bakery_lint/tests/downstream/test_metadata_agreements.py: TestPostScriptNameInMetadataEqualFontOnDisk.test_postscriptname_in_metadata_equal_to_font_on_disk():  Checks METADATA.json 'postScriptName' matches TTF 'postScriptName' 
+"fonts.name" property is not the same as TTF familyname
+note: FAIL: bakery_lint/tests/downstream/test_metadata_agreements.py: CheckMetadataAgreements.test_font_name_matches_family():  METADATA.json fonts 'name' property should be
+            same as font familyname : "fonts.name" property is not the same as TTF familyname
+
+note: OK: bakery_lint/tests/downstream/test_metadata_agreements.py: CheckMetadataAgreements.test_metadata_family_values_are_all_the_same():  Check that METADATA family values are all the same 
+
+required: OK: bakery_lint/tests/downstream/test_metadata_agreements.py: CheckMetadataAgreements.test_metadata_filename_matches_postscriptname():  METADATA.json `filename` matches `postScriptName` 
+
+note: OK: bakery_lint/tests/downstream/test_metadata_agreements.py: CheckMetadataAgreements.test_metadata_font_have_regular():  According GWF standarts font should have Regular style. 
+
+note: OK: bakery_lint/tests/downstream/test_metadata_agreements.py: CheckMetadataAgreements.test_metadata_fonts_fields_have_fontname():  METADATA.json fonts items fields "name", "postScriptName",
+            "fullName", "filename" contains font name right format 
+
+note: OK: bakery_lint/tests/downstream/test_metadata_agreements.py: CheckMetadataAgreements.test_metadata_fullname_is_equal_to_internal_font_fullname():  METADATA.json 'fullname' value matches internal 'fullname' 
+
+required: OK: bakery_lint/tests/downstream/test_metadata_agreements.py: CheckMetadataAgreements.test_metadata_fullname_matches_postScriptName():  METADATA.json `fullName` matches `postScriptName` 
+
+required: OK: bakery_lint/tests/downstream/test_metadata_agreements.py: CheckMetadataAgreements.test_metadata_regular_is_400():  Regular should be 400 
+
+note: OK: bakery_lint/tests/downstream/test_metadata_agreements.py: CheckMetadataAgreements.test_metadata_regular_is_normal():  Usually Regular should be normal style 
+
+note: OK: bakery_lint/tests/downstream/test_check_monospace_agreements.py: CheckMonospaceAgreement.test_check_monospace_agreement():  Monospace font has hhea.advanceWidthMax equal to each
+            glyph advanceWidth 
+
+note: OK: bakery_lint/tests/downstream/test_check_canonical_weights.py: CheckCanonicalWeights.test_check_canonical_weights():  Check that weights have canonical value 
+postScriptName with weight 400 must be ended with "Regular" or "Italic"
+note: FAIL: bakery_lint/tests/downstream/test_check_canonical_weights.py: CheckPostScriptNameMatchesWeight.test_postscriptname_contains_correct_weight():  Metadata weight matches postScriptName : postScriptName with weight 400 must be ended with "Regular" or "Italic"
+
+note: OK: bakery_lint/tests/downstream/test_check_canonical_weights.py: CheckFontWeightSameAsInMetadata.test_font_weight_same_as_in_metadata():  Font weight matches metadata.json value of key "weight" 
+
+note: OK: bakery_lint/tests/downstream/test_check_canonical_weights.py: CheckFullNameEqualCanonicalName.test_metadata_contains_current_font():  METADATA.json should contains testing font, under canonic name
+YesevaOne: Family name was supposed to be "Yeseva One" but is "YesevaOne"
+note: FAIL: bakery_lint/tests/downstream/test_check_metadata_matches_nametable.py: CheckMetadataMatchesNameTable.test_check_metadata_matches_nametable():  Metadata key-value match to table name fields : YesevaOne: Family name was supposed to be "Yeseva One" but is "YesevaOne"
+
+required: OK: bakery_lint/tests/downstream/test_check_files_menu_agreements.py: CheckFontsMenuAgreements.test_menu_file_agreement():  Check fonts have corresponding menu files 
+%s are camel cased names. To solve this check just use spaces in names.
+note: FAIL: bakery_lint/tests/downstream/test_check_font_name_not_in_camelcase.py: CheckFontNameNotInCamelCase.test_fontname_not_in_camel_case():  Check if fontname is not camel cased : %s are camel cased names. To solve this check just use spaces in names.
+
+note: OK: bakery_lint/tests/downstream/test_check_canonical_styles.py: CheckCanonicalStyles.test_check_canonical_styles():  Test If font styles are canonical 
+
+required: OK: bakery_lint/tests/downstream/test_check_metadata_fields.py: CheckMetadataFields.test_check_metadata_fields():  Check METADATA.json "fonts" property items have required field 
+u'YesevaOne-Regular.ttf' != u'Yeseva-One.ttf'
+- YesevaOne-Regular.ttf
+?          --------
++ Yeseva-One.ttf
+?       +
+
+required: FAIL: bakery_lint/tests/downstream/test_check_canonical_filenames.py: CheckCanonicalFilenames.test_check_canonical_filenames():  Test If filename is canonical : u'YesevaOne-Regular.ttf' != u'Yeseva-One.ttf'
+- YesevaOne-Regular.ttf
+?          --------
++ Yeseva-One.ttf
+?       +
+
+YesevaOne-Regular.ttf: Family name "Yeseva One" does not match font name: "YesevaOne"
+note: FAIL: bakery_lint/tests/downstream/test_check_familyname_matches_fontnames.py: CheckFamilyNameMatchesFontNames.test_check_familyname_matches_fontnames():  Check font name is the same as family name : YesevaOne-Regular.ttf: Family name "Yeseva One" does not match font name: "YesevaOne"
+
+note: OK: bakery_lint/tests/downstream/test_check_glyph_consistency.py: CheckGlyphConsistencyInFamily.test_the_same_encodings_of_glyphs_across_family():  The same unicode encodings of glyphs across family? 
+Family has a different glyphs's names in fonts
+note: FAIL: bakery_lint/tests/downstream/test_check_glyph_consistency.py: CheckGlyphConsistencyInFamily.test_the_same_names_of_glyphs_across_family():  The same names of glyphs across family? : Family has a different glyphs's names in fonts
+Family has a different glyphs's count in fonts
+note: FAIL: bakery_lint/tests/downstream/test_check_glyph_consistency.py: CheckGlyphConsistencyInFamily.test_the_same_number_of_glyphs_across_family():  The same number of glyphs across family? : Family has a different glyphs's count in fonts
+
+note: OK: bakery_lint/tests/downstream/test_check_metadata_style_matches_names.py: CheckItalicStyleMatchesMacStyle.test_check_italic_style_matches_names():  Check metadata.json font.style `italic` matches font internal 
+
+note: OK: bakery_lint/tests/downstream/test_check_metadata_style_matches_names.py: CheckNormalStyleMatchesMacStyle.test_check_normal_style_matches_names():  Check metadata.json font.style `italic` matches font internal 
+
+note: OK: bakery_lint/tests/downstream/test_check_menu_contains_proper_glyphs.py: CheckMenuSubsetContainsProperGlyphs.test_check_menu_contains_proper_glyphs():  Check menu file contains proper glyphs 
+"Copyright (c) 2011-2012 by Jovanny Lemonad. All rights reserved." should have "Reserved File Name"
+required, info: FAIL: bakery_lint/tests/downstream/test_metadata_font_copyright.py: CheckMetadataContainsReservedFontName.test_copyright_contains_correct_rfn():  Copyright string contains "Reserved File Name" : "Copyright (c) 2011-2012 by Jovanny Lemonad. All rights reserved." should have "Reserved File Name"
+
+required: OK: bakery_lint/tests/downstream/test_metadata_font_copyright.py: CheckMetadataContainsReservedFontName.test_copyright_is_consistent_across_family():  METADATA.json fonts copyright string is the same for all items 
+Regexp didn't match: 'Copyright\\s+\\(c\\)\\s+20\\d{2}.*\\(.*@.*.*\\)' not found in u'Copyright (c) 2011-2012 by Jovanny Lemonad. All rights reserved.'
+required: FAIL: bakery_lint/tests/downstream/test_metadata_font_copyright.py: CheckMetadataContainsReservedFontName.test_copyright_matches_pattern():  Copyright string matches to Copyright * 20\d\d * (*@*.*) : Regexp didn't match: 'Copyright\\s+\\(c\\)\\s+20\\d{2}.*\\(.*@.*.*\\)' not found in u'Copyright (c) 2011-2012 by Jovanny Lemonad. All rights reserved.'
+
+required: OK: bakery_lint/tests/downstream/test_metadata_font_copyright.py: CheckMetadataContainsReservedFontName.test_metadata_copyright_size():  Copyright string should be less than 500 chars 
+['COPYRIGHT.txt'] does not exist in project
+required: FAIL: bakery_lint/tests/downstream/test_check_text_files_exist.py: CheckTextFilesExist.test_copyrighttxt_exists():  Font folder should contains COPYRIGHT.txt : ['COPYRIGHT.txt'] does not exist in project
+
+required: OK: bakery_lint/tests/downstream/test_check_text_files_exist.py: CheckTextFilesExist.test_description_exists():  Font folder should contains DESCRIPTION.en_us.html 
+['FONTLOG.txt'] does not exist in project
+note: FAIL: bakery_lint/tests/downstream/test_check_text_files_exist.py: CheckTextFilesExist.test_fontlogtxt_exists():  Font folder should contains FONTLOG.txt : ['FONTLOG.txt'] does not exist in project
+
+required: OK: bakery_lint/tests/downstream/test_check_text_files_exist.py: CheckTextFilesExist.test_licensetxt_exists():  Font folder should contains LICENSE.txt 
+
+
+
+### (6 of 6) pyfontaine
+
+$ fontaine --collections subsets --text /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/YesevaOne-Regular.ttx /home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/Yeseva-One.ttx > fontaine.txt
+WARNING: Please install PyICU <https://pypi.python.org/pypi/PyICU> to enable CLDR related features, perhaps with: pip install pyicu
+end of pyfontaine process
+
+Compiling "/home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/YesevaOne-Regular.ttx" to "/home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/YesevaOne-Regular.otf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'name' table...
+Parsing 'cmap' table...
+Parsing 'post' table...
+Parsing 'CFF ' table...
+Parsing 'GPOS' table...
+Parsing 'GSUB' table...
+Parsing 'hmtx' table...
+Parsing 'kern' table...
+Compiling "/home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/Yeseva-One.ttx" to "/home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/Yeseva-One.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'fpgm' table...
+Parsing 'prep' table...
+Parsing 'cvt ' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'kern' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'GPOS' table...
+strippedname:/home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/sources/YesevaOne-Regular.otf
+spaceWidth is    280
+nbspWidth is     0
+YesevaOne-Regular.ttf.fix made with spaceWidth and nbspWidth of 280
+strippedname:/home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/YesevaOne-Regular.ttf
+spaceWidth is    280
+nbspWidth is     -229
+Yeseva-One.ttf.fix made with spaceWidth and nbspWidth of 280
+strippedname:/home/travis/build/fontdirectory/yesevaone/builds/0c793f85d2e31c6b867304ef6392f62d80466246/Yeseva-One.ttf
+{
+  "name": "Yeseva One", 
+  "designer": "Jovanny Lemonad", 
+  "license": "OFL", 
+  "visibility": "External", 
+  "category": "Display", 
+  "size": 15436, 
+  "fonts": [
+    {
+      "name": "YesevaOne", 
+      "postScriptName": "YesevaOne-Regular", 
+      "fullName": "YesevaOne Regular", 
+      "style": "normal", 
+      "weight": 400, 
+      "filename": "YesevaOne-Regular.ttf", 
+      "copyright": "Copyright (c) 2011-2012 by Jovanny Lemonad. All rights reserved."
+    }, 
+    {
+      "name": "YesevaOne", 
+      "postScriptName": "Yeseva-One", 
+      "fullName": "Yeseva One", 
+      "style": "normal", 
+      "weight": 400, 
+      "filename": "Yeseva-One.ttf", 
+      "copyright": "Copyright (c) 2011-2012 by Jovanny Lemonad. All rights reserved."
+    }
+  ], 
+  "subsets": [
+    "latin", 
+    "menu"
+  ], 
+  "dateAdded": "2011-07-13"
+}

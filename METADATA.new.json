@@ -1,0 +1,33 @@
+{
+  "name": "Yeseva One",
+  "designer": "Jovanny Lemonad",
+  "license": "OFL",
+  "visibility": "External",
+  "category": "Display",
+  "size": 15436,
+  "fonts": [
+    {
+      "name": "YesevaOne",
+      "style": "normal",
+      "weight": 400,
+      "filename": "YesevaOne-Regular.ttf",
+      "postScriptName": "YesevaOne-Regular",
+      "fullName": "YesevaOne Regular",
+      "copyright": "Copyright (c) 2011-2012 by Jovanny Lemonad. All rights reserved."
+    },
+    {
+      "name": "YesevaOne",
+      "style": "normal",
+      "weight": 400,
+      "filename": "Yeseva-One.ttf",
+      "postScriptName": "Yeseva-One",
+      "fullName": "Yeseva One",
+      "copyright": "Copyright (c) 2011-2012 by Jovanny Lemonad. All rights reserved."
+    }
+  ],
+  "subsets": [
+    "latin",
+    "menu"
+  ],
+  "dateAdded": "2011-07-13"
+}

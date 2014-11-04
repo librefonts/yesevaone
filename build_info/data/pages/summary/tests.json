@@ -1,0 +1,3240 @@
+[
+  {
+    "failure": [
+      {
+        "autofix": false, 
+        "methodName": "test_kerning_pairs", 
+        "name": "bakery_lint.tests.downstream.test_kerning_pairs", 
+        "tags": [
+          "info"
+        ], 
+        "tool": "lint", 
+        "err_msg": "Kerning pairs to total glyphs is 450:1037", 
+        "methodDoc": "Number of kerning pairs?", 
+        "targets": "result"
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_glyf_table_length", 
+        "name": "bakery_lint.tests.downstream.test_check_glyf_table_length", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "Glyf table has unreachable data at the end of the table. Expected glyf table length 902 (from loca table), got length 77010 (difference: 76108)", 
+        "methodDoc": "Check if there is unused data at the end of the glyf table", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_missing_extrema_in_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "True is not false", 
+        "methodDoc": "Glyphs have points at extremas", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_upm_heigths_less_120", 
+        "name": "bakery_lint.tests.downstream.test_check_upm_heights_less_120", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "UPM:Height is 125%, consider redesigning to 120% or less", 
+        "methodDoc": "Check if UPM Heights NOT more than 120%", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_names_same_across_platforms", 
+        "name": "bakery_lint.tests.downstream.test_check_names_same_across_platforms", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "Names in \"name\" table are not the same across specific-platforms", 
+        "methodDoc": "Font names are same across specific-platforms", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_prep_magic_code", 
+        "name": "bakery_lint.tests.downstream.test_check_magic_prep_code", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "PREP does not contain magic code", 
+        "methodDoc": "Font contains in PREP table magic code", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_fontname_is_equal_to_macstyle", 
+        "name": "bakery_lint.tests.downstream.test_check_fontname_matches_macstyle", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "macStyle (b0) supposed style ended with \"Regular\"", 
+        "methodDoc": "Check that fontname is equal to macstyle flags", 
+        "targets": [
+          "result"
+        ]
+      }
+    ], 
+    "name": "Yeseva-One.ttf", 
+    "passed": false, 
+    "error": [], 
+    "fixed": [
+      {
+        "autofix": true, 
+        "methodName": "test_is_fstype_not_set", 
+        "name": "bakery_lint.tests.downstream.test_check_font_agreements", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "4 != 0", 
+        "methodDoc": "Is the OS/2 table fsType set to 0?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_is_fstype_not_set", 
+        "name": "bakery_lint.tests.downstream.test_check_font_agreements", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "4 != 0", 
+        "methodDoc": "Is the OS/2 table fsType set to 0?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_metrics_linegaps_are_zero", 
+        "name": "bakery_lint.tests.downstream.test_check_vertical_metrics", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that linegaps in tables are zero", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_metrics_ascents_equal_bbox", 
+        "name": "bakery_lint.tests.downstream.test_check_vertical_metrics", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that ascents values are same as max glyph point", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_metrics_descents_equal_bbox", 
+        "name": "bakery_lint.tests.downstream.test_check_vertical_metrics", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that descents values are same as min glyph point", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_font_unencoded_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_check_unencoded_glyph", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "There should not be unencoded glyphs", 
+        "methodDoc": "Font does not have unencoded glyphs", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_names_are_ascii_only", 
+        "name": "bakery_lint.tests.downstream.test_names_are_ascii_only", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "NAME and CFF tables must not contain non-ascii characters", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_name_id_copyright", 
+        "name": "bakery_lint.tests.downstream.test_license_related_nameid", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "True is not false", 
+        "methodDoc": "Is there `opyright` substring nameID in nameId (10) ?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_name_id_copyright", 
+        "name": "bakery_lint.tests.downstream.test_license_related_nameid", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "True is not false", 
+        "methodDoc": "Is there `opyright` substring nameID in nameId (10) ?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_name_id_of_license", 
+        "name": "bakery_lint.tests.downstream.test_license_related_nameid", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "License file OFL.txt exists but NameID value is not specified for that", 
+        "methodDoc": "Is there OFL in nameId (13) ?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_name_id_of_license", 
+        "name": "bakery_lint.tests.downstream.test_license_related_nameid", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "License file OFL.txt exists but NameID value is not specified for that", 
+        "methodDoc": "Is there OFL in nameId (13) ?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_name_id_of_license_url", 
+        "name": "bakery_lint.tests.downstream.test_license_related_nameid", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "True is not false", 
+        "methodDoc": "Is there OFL in nameId (13) ?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_name_id_of_license_url", 
+        "name": "bakery_lint.tests.downstream.test_license_related_nameid", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "True is not false", 
+        "methodDoc": "Is there OFL in nameId (13) ?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_name_id_apache_license", 
+        "name": "bakery_lint.tests.downstream.test_license_related_nameid", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Is there Apache in nameId (13) ?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_name_id_apache_license_url", 
+        "name": "bakery_lint.tests.downstream.test_license_related_nameid", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Is there OFL in nameId (13) ?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_font_has_dsig_table", 
+        "name": "bakery_lint.tests.downstream.test_check_font_tables", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "Font does not have \"DSIG\" table", 
+        "methodDoc": "Check that font has DSIG table", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_font_has_dsig_table", 
+        "name": "bakery_lint.tests.downstream.test_check_font_tables", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "Font does not have \"DSIG\" table", 
+        "methodDoc": "Check that font has DSIG table", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_nbsp_width_matches_sp_width", 
+        "name": "bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "The nbsp advance width does not match the space advance width", 
+        "methodDoc": "Check non-breaking space's advancewidth is the same as space", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_nbsp_width_matches_sp_width", 
+        "name": "bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "The nbsp advance width does not match the space advance width", 
+        "methodDoc": "Check non-breaking space's advancewidth is the same as space", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_stylename_is_under_recommendations", 
+        "name": "bakery_lint.tests.downstream.test_check_name_table_recommendation", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "'' not found in ['Regular', 'Italic', 'Bold', 'Bold Italic']", 
+        "methodDoc": "Style name must be equal to one of the following four values: \"Regular\", \"Italic\", \"Bold\" or \"Bold Italic\"", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_stylename_is_under_recommendations", 
+        "name": "bakery_lint.tests.downstream.test_check_name_table_recommendation", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "'' not found in ['Regular', 'Italic', 'Bold', 'Bold Italic']", 
+        "methodDoc": "Style name must be equal to one of the following four values: \"Regular\", \"Italic\", \"Bold\" or \"Bold Italic\"", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_opentype_familyname", 
+        "name": "bakery_lint.tests.downstream.test_check_name_table_recommendation", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "OT Family Name for Windows should be equal to Family Name", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_opentype_fullname", 
+        "name": "bakery_lint.tests.downstream.test_check_name_table_recommendation", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "u'Yeseva Regular' != u'Yeseva One'\n- Yeseva Regular\n+ Yeseva One\n", 
+        "methodDoc": "Full name matches Windows-only Opentype-specific FullName", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_suggested_subfamily_name", 
+        "name": "bakery_lint.tests.downstream.test_check_name_table_recommendation", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Family does not contain subfamily in `name` table", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_gasp_table_type", 
+        "name": "bakery_lint.tests.downstream.test_gasp_table_value", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Font table gasp should be 15", 
+        "targets": [
+          "result"
+        ]
+      }
+    ], 
+    "success": [
+      {
+        "autofix": false, 
+        "methodName": "test_em_is_1000", 
+        "name": "bakery_lint.tests.downstream.test_check_font_agreements", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Font em size should be 1000, but doesn't have to be", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_font_is_font", 
+        "name": "bakery_lint.tests.downstream.test_check_font_agreements", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "File provided as parameter is TTF font file", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_latin_file_exists", 
+        "name": "bakery_lint.tests.downstream.test_check_font_agreements", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "GF requires a latin subset, so we check that font file exists", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_menu_file_exists", 
+        "name": "bakery_lint.tests.downstream.test_check_font_agreements", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "GF requires a menu subset, so we check that font file exists", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_full_font_name_begins_with_family_name", 
+        "name": "bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check if full font name begins with the font family name", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_no_kern_table_exists", 
+        "name": "bakery_lint.tests.downstream.test_check_font_tables", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that no \"KERN\" table exists", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_italic_angle_agreement", 
+        "name": "bakery_lint.tests.downstream.test_check_italic_angle_agreement", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check italicangle property zero or negative", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_no_problematic_formats", 
+        "name": "bakery_lint.tests.downstream.test_check_no_problematic_formats", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that font contain required tables", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_allowed_numbers_paths_in_composite_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Composite glyphs have allowed numbers of paths defined in maxp", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_allowed_numbers_paths_in_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Glyphs have allowed numbers of paths defined in maxp", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_allowed_numbers_points_in_composite_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Composite glyphs have allowed numbers of points defined in maxp", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_allowed_numbers_points_in_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Glyphs have allowed numbers of points defined in maxp", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_duplicate_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Glyph names are unique.", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_duplicate_unicode_codepoints", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Unicode code points are unique.", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_flipped_reference_in_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "References in the glyph haven't been flipped", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_missing_anchors", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Glyphs have all required anchors. (According to the opentype spec, if a glyph contains an anchor point for one anchor class in a subtable, it must contain anchor points for all anchor classes in the subtable. Even it, logically, they do not apply and are unnecessary.)", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_overlapped_hints", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Hints do not overlap", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_points_are_integer_aligned", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Points in glyphs are integer aligned", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_points_are_not_too_far_apart", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Points (or control points) are not too far apart", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_postscript_hasnt_limit_hints_in_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "PostScript hasnt a limit of 96 hints in glyphs", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_postscript_hasnt_limit_points_in_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Not more than 1,500 points in any glyph (a PostScript limit)", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_referenced_glyphs_are_present", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Glyph names referred to from glyphs present in the font", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_valid_glyph_names", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Font doesn't have invalid glyph names", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_valid_length_instructions", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Glyphs instructions have valid lengths", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_validation_glyph_intersect", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Contours do not intersect", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_validation_open_contours", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Contours are closed", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_wrong_direction_in_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Contours have correct directions", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_os2_width_class", 
+        "name": "bakery_lint.tests.downstream.test_check_os2_width_class", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "None", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_license_included_in_font_names", 
+        "name": "bakery_lint.tests.downstream.test_check_license_included", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check font has a correct license url", 
+        "targets": "result"
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_panose_identification", 
+        "name": "bakery_lint.tests.downstream.test_check_panose_identification", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check if Panose is not set to monospaced if advancewidth of all glyphs is not equal to each others", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_euro", 
+        "name": "bakery_lint.tests.downstream.test_check_glyph_existence", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check if 'EURO SIGN' exists", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_nbsp", 
+        "name": "bakery_lint.tests.downstream.test_check_glyph_existence", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check if 'NO-BREAK SPACE' exists", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_space", 
+        "name": "bakery_lint.tests.downstream.test_check_glyph_existence", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check if 'SPACE' exists", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_gpos_table_has_kerning_info", 
+        "name": "bakery_lint.tests.downstream.test_gpos_table_has_kerning_info", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "GPOS table has kerning information", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_ots", 
+        "name": "bakery_lint.tests.downstream.test_check_font_sanitized_for_chrome_and_firefox", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Is TTF file correctly sanitized for Firefox and Chrome", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_hmtx_hhea_max_advance_width_agreement", 
+        "name": "bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check if MaxAdvanceWidth agree in the Hmtx and Hhea tables", 
+        "targets": [
+          "result"
+        ]
+      }
+    ]
+  }, 
+  {
+    "failure": [
+      {
+        "autofix": false, 
+        "methodName": "test_bakery_yaml_exists", 
+        "name": "bakery_lint.tests.upstream.test_repo", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "File `bakery.yaml` does not exist in root of upstream repository", 
+        "methodDoc": "Repository contains bakery.yaml configuration file?", 
+        "targets": [
+          "upstream-repo"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_fontlog_txt_exists", 
+        "name": "bakery_lint.tests.upstream.test_repo", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "File `FONTLOG.txt` does not exist in root of upstream repository", 
+        "methodDoc": "Repository contains FONTLOG.txt file?", 
+        "targets": [
+          "upstream-repo"
+        ]
+      }
+    ], 
+    "name": "Project", 
+    "passed": true, 
+    "error": [], 
+    "fixed": [], 
+    "success": [
+      {
+        "autofix": false, 
+        "methodName": "test_diacritic_made_as_component", 
+        "name": "bakery_lint.tests.upstream.test_any_diacritic", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that diacritic glyph are made completely with composite", 
+        "targets": [
+          "upstream-repo"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_diacritic_made_as_mark_to_mark", 
+        "name": "bakery_lint.tests.upstream.test_any_diacritic", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that diacritic glyph are made completely with mark method", 
+        "targets": [
+          "upstream-repo"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_diacritic_made_as_own_glyphs", 
+        "name": "bakery_lint.tests.upstream.test_any_diacritic", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that diacritic glyph are made completely with flat method", 
+        "targets": [
+          "upstream-repo"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_copyright_notices_same_across_family", 
+        "name": "bakery_lint.tests.upstream.test_repo", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Each font copyright notice matches?", 
+        "targets": [
+          "upstream-repo"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_description_html_exists", 
+        "name": "bakery_lint.tests.upstream.test_repo", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Repository contains DESCRIPTION.en_us.html file?", 
+        "targets": [
+          "upstream-repo"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_json_exists", 
+        "name": "bakery_lint.tests.upstream.test_repo", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Repository contains METADATA.json file?", 
+        "targets": [
+          "upstream-repo"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_family_glyph_names_match", 
+        "name": "bakery_lint.tests.upstream.test_any_glyphs_prepolate", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Each font in family has matching glyph names?", 
+        "targets": [
+          "upstream-repo"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_font_prepolation_glyph_contours", 
+        "name": "bakery_lint.tests.upstream.test_any_glyphs_prepolate", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that glyphs has same number of contours across family", 
+        "targets": [
+          "upstream-repo"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_font_prepolation_glyph_points", 
+        "name": "bakery_lint.tests.upstream.test_any_glyphs_prepolate", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that glyphs has same number of points across family", 
+        "targets": [
+          "upstream-repo"
+        ]
+      }
+    ]
+  }, 
+  {
+    "failure": [
+      {
+        "autofix": false, 
+        "methodName": "test_epar_in_keys", 
+        "name": "bakery_lint.tests.upstream.test_ttx_requirements", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "fontTools", 
+        "err_msg": "'EPAR' not found in ['GlyphOrder', 'head', 'hhea', 'maxp', 'OS/2', 'name', 'cmap', 'post', 'CFF ', 'GPOS', 'GSUB', 'hmtx', 'kern']", 
+        "methodDoc": "EPAR table present in font?", 
+        "targets": [
+          "upstream-ttx"
+        ]
+      }
+    ], 
+    "name": "YesevaOne-Regular_v2.otf.ttx", 
+    "passed": true, 
+    "error": [], 
+    "fixed": [
+      {
+        "autofix": true, 
+        "methodName": "test_source_ttf_font_filename_equals_familystyle", 
+        "name": "bakery_lint.tests.upstream.test_ttx_font_filename_eq_familystyle", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "'YesevaOne-Regular_v2.otf' != 'YesevaOne-Regular'", 
+        "methodDoc": "Source TTF Font filename equals family style", 
+        "targets": [
+          "upstream", 
+          "upstream-ttx"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_source_ttf_font_filename_equals_familystyle", 
+        "name": "bakery_lint.tests.upstream.test_ttx_font_filename_eq_familystyle", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "'YesevaOne-Regular_v2.otf' != 'YesevaOne-Regular'", 
+        "methodDoc": "Source TTF Font filename equals family style", 
+        "targets": [
+          "upstream", 
+          "upstream-ttx"
+        ]
+      }
+    ], 
+    "success": [
+      {
+        "autofix": false, 
+        "methodName": "test_ttx_family_naming_recommendation", 
+        "name": "bakery_lint.tests.upstream.test_ttx_fontfamily_recommendations", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "TTFont", 
+        "err_msg": "", 
+        "methodDoc": "The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0", 
+        "targets": [
+          "upstream-ttx"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_glyphname_does_not_contain_disallowed_chars", 
+        "name": "bakery_lint.tests.upstream.test_ttx_glyphnames_clean", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "GlyphName length < 30 and does contain allowed chars only", 
+        "targets": [
+          "upstream-ttx"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_ttx_duplicate_glyphs", 
+        "name": "bakery_lint.tests.upstream.test_ttx_requirements", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "fontTools", 
+        "err_msg": "", 
+        "methodDoc": "Font contains unique glyph names? (Duplicate glyph names prevent font installation on Mac OS X.)", 
+        "targets": [
+          "upstream-ttx"
+        ]
+      }
+    ]
+  }, 
+  {
+    "failure": [
+      {
+        "autofix": false, 
+        "methodName": "test_check_full_font_name_begins_with_family_name", 
+        "name": "bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "Full font name does not begin with family name: FontFamilyName = \"Yeseva One\"; FullFontName = \"YesevaOne\"", 
+        "methodDoc": "Check if full font name begins with the font family name", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_glyf_table_length", 
+        "name": "bakery_lint.tests.downstream.test_check_glyf_table_length", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "Glyf table has unreachable data at the end of the table. Expected glyf table length 900 (from loca table), got length 45552 (difference: 44652)", 
+        "methodDoc": "Check if there is unused data at the end of the glyf table", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_missing_extrema_in_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "True is not false", 
+        "methodDoc": "Glyphs have points at extremas", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_upm_heigths_less_120", 
+        "name": "bakery_lint.tests.downstream.test_check_upm_heights_less_120", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "UPM:Height is 125%, consider redesigning to 120% or less", 
+        "methodDoc": "Check if UPM Heights NOT more than 120%", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_prep_magic_code", 
+        "name": "bakery_lint.tests.downstream.test_check_magic_prep_code", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "PREP does not contain magic code", 
+        "methodDoc": "Font contains in PREP table magic code", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_fontname_is_equal_to_macstyle", 
+        "name": "bakery_lint.tests.downstream.test_check_fontname_matches_macstyle", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "macStyle (b0) supposed style ended with \"Regular\"", 
+        "methodDoc": "Check that fontname is equal to macstyle flags", 
+        "targets": [
+          "result"
+        ]
+      }
+    ], 
+    "name": "YesevaOne-Regular.ttf", 
+    "passed": true, 
+    "error": [], 
+    "fixed": [
+      {
+        "autofix": true, 
+        "methodName": "test_is_fstype_not_set", 
+        "name": "bakery_lint.tests.downstream.test_check_font_agreements", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "4 != 0", 
+        "methodDoc": "Is the OS/2 table fsType set to 0?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_is_fstype_not_set", 
+        "name": "bakery_lint.tests.downstream.test_check_font_agreements", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "4 != 0", 
+        "methodDoc": "Is the OS/2 table fsType set to 0?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_metrics_linegaps_are_zero", 
+        "name": "bakery_lint.tests.downstream.test_check_vertical_metrics", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that linegaps in tables are zero", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_metrics_ascents_equal_bbox", 
+        "name": "bakery_lint.tests.downstream.test_check_vertical_metrics", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "[sources/Yeseva-One.ttf, YesevaOne-Regular.ttf] ascents differ to maximum value: 940", 
+        "methodDoc": "Check that ascents values are same as max glyph point", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_metrics_ascents_equal_bbox", 
+        "name": "bakery_lint.tests.downstream.test_check_vertical_metrics", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "[sources/Yeseva-One.ttf, YesevaOne-Regular.ttf] ascents differ to maximum value: 940", 
+        "methodDoc": "Check that ascents values are same as max glyph point", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_metrics_descents_equal_bbox", 
+        "name": "bakery_lint.tests.downstream.test_check_vertical_metrics", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that descents values are same as min glyph point", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_font_unencoded_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_check_unencoded_glyph", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "There should not be unencoded glyphs", 
+        "methodDoc": "Font does not have unencoded glyphs", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_names_are_ascii_only", 
+        "name": "bakery_lint.tests.downstream.test_names_are_ascii_only", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "NAME and CFF tables must not contain non-ascii characters", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_name_id_copyright", 
+        "name": "bakery_lint.tests.downstream.test_license_related_nameid", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "True is not false", 
+        "methodDoc": "Is there `opyright` substring nameID in nameId (10) ?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_name_id_copyright", 
+        "name": "bakery_lint.tests.downstream.test_license_related_nameid", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "True is not false", 
+        "methodDoc": "Is there `opyright` substring nameID in nameId (10) ?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_name_id_of_license", 
+        "name": "bakery_lint.tests.downstream.test_license_related_nameid", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "License file OFL.txt exists but NameID value is not specified for that", 
+        "methodDoc": "Is there OFL in nameId (13) ?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_name_id_of_license", 
+        "name": "bakery_lint.tests.downstream.test_license_related_nameid", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "License file OFL.txt exists but NameID value is not specified for that", 
+        "methodDoc": "Is there OFL in nameId (13) ?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_name_id_of_license_url", 
+        "name": "bakery_lint.tests.downstream.test_license_related_nameid", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "True is not false", 
+        "methodDoc": "Is there OFL in nameId (13) ?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_name_id_of_license_url", 
+        "name": "bakery_lint.tests.downstream.test_license_related_nameid", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "True is not false", 
+        "methodDoc": "Is there OFL in nameId (13) ?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_name_id_apache_license", 
+        "name": "bakery_lint.tests.downstream.test_license_related_nameid", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Is there Apache in nameId (13) ?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_name_id_apache_license_url", 
+        "name": "bakery_lint.tests.downstream.test_license_related_nameid", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Is there OFL in nameId (13) ?", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_font_has_dsig_table", 
+        "name": "bakery_lint.tests.downstream.test_check_font_tables", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that font has DSIG table", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_nbsp_width_matches_sp_width", 
+        "name": "bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "The nbsp advance width does not match the space advance width", 
+        "methodDoc": "Check non-breaking space's advancewidth is the same as space", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_nbsp_width_matches_sp_width", 
+        "name": "bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "The nbsp advance width does not match the space advance width", 
+        "methodDoc": "Check non-breaking space's advancewidth is the same as space", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_stylename_is_under_recommendations", 
+        "name": "bakery_lint.tests.downstream.test_check_name_table_recommendation", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "'' not found in ['Regular', 'Italic', 'Bold', 'Bold Italic']", 
+        "methodDoc": "Style name must be equal to one of the following four values: \"Regular\", \"Italic\", \"Bold\" or \"Bold Italic\"", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_stylename_is_under_recommendations", 
+        "name": "bakery_lint.tests.downstream.test_check_name_table_recommendation", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "'' not found in ['Regular', 'Italic', 'Bold', 'Bold Italic']", 
+        "methodDoc": "Style name must be equal to one of the following four values: \"Regular\", \"Italic\", \"Bold\" or \"Bold Italic\"", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_opentype_familyname", 
+        "name": "bakery_lint.tests.downstream.test_check_name_table_recommendation", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "OT Family Name for Windows should be equal to Family Name", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_opentype_fullname", 
+        "name": "bakery_lint.tests.downstream.test_check_name_table_recommendation", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Full name matches Windows-only Opentype-specific FullName", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_suggested_subfamily_name", 
+        "name": "bakery_lint.tests.downstream.test_check_name_table_recommendation", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Family does not contain subfamily in `name` table", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_gasp_table_type", 
+        "name": "bakery_lint.tests.downstream.test_gasp_table_value", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "gaspRange[65535] value is not 15", 
+        "methodDoc": "Font table gasp should be 15", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_check_gasp_table_type", 
+        "name": "bakery_lint.tests.downstream.test_gasp_table_value", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "gaspRange[65535] value is not 15", 
+        "methodDoc": "Font table gasp should be 15", 
+        "targets": [
+          "result"
+        ]
+      }
+    ], 
+    "success": [
+      {
+        "autofix": false, 
+        "methodName": "test_em_is_1000", 
+        "name": "bakery_lint.tests.downstream.test_check_font_agreements", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Font em size should be 1000, but doesn't have to be", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_font_is_font", 
+        "name": "bakery_lint.tests.downstream.test_check_font_agreements", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "File provided as parameter is TTF font file", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_latin_file_exists", 
+        "name": "bakery_lint.tests.downstream.test_check_font_agreements", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "GF requires a latin subset, so we check that font file exists", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_menu_file_exists", 
+        "name": "bakery_lint.tests.downstream.test_check_font_agreements", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "GF requires a menu subset, so we check that font file exists", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_no_kern_table_exists", 
+        "name": "bakery_lint.tests.downstream.test_check_font_tables", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that no \"KERN\" table exists", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_italic_angle_agreement", 
+        "name": "bakery_lint.tests.downstream.test_check_italic_angle_agreement", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check italicangle property zero or negative", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_no_problematic_formats", 
+        "name": "bakery_lint.tests.downstream.test_check_no_problematic_formats", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that font contain required tables", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_allowed_numbers_paths_in_composite_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Composite glyphs have allowed numbers of paths defined in maxp", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_allowed_numbers_paths_in_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Glyphs have allowed numbers of paths defined in maxp", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_allowed_numbers_points_in_composite_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Composite glyphs have allowed numbers of points defined in maxp", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_allowed_numbers_points_in_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Glyphs have allowed numbers of points defined in maxp", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_duplicate_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Glyph names are unique.", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_duplicate_unicode_codepoints", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Unicode code points are unique.", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_flipped_reference_in_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "References in the glyph haven't been flipped", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_missing_anchors", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Glyphs have all required anchors. (According to the opentype spec, if a glyph contains an anchor point for one anchor class in a subtable, it must contain anchor points for all anchor classes in the subtable. Even it, logically, they do not apply and are unnecessary.)", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_overlapped_hints", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Hints do not overlap", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_points_are_integer_aligned", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Points in glyphs are integer aligned", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_points_are_not_too_far_apart", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Points (or control points) are not too far apart", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_postscript_hasnt_limit_hints_in_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "PostScript hasnt a limit of 96 hints in glyphs", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_postscript_hasnt_limit_points_in_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Not more than 1,500 points in any glyph (a PostScript limit)", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_referenced_glyphs_are_present", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Glyph names referred to from glyphs present in the font", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_valid_glyph_names", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Font doesn't have invalid glyph names", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_valid_length_instructions", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Glyphs instructions have valid lengths", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_validation_glyph_intersect", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Contours do not intersect", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_validation_open_contours", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Contours are closed", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_wrong_direction_in_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_fontforge_validation_state", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "FontForge", 
+        "err_msg": "", 
+        "methodDoc": "Contours have correct directions", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_names_same_across_platforms", 
+        "name": "bakery_lint.tests.downstream.test_check_names_same_across_platforms", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Font names are same across specific-platforms", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_os2_width_class", 
+        "name": "bakery_lint.tests.downstream.test_check_os2_width_class", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "None", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_license_included_in_font_names", 
+        "name": "bakery_lint.tests.downstream.test_check_license_included", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check font has a correct license url", 
+        "targets": "result"
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_panose_identification", 
+        "name": "bakery_lint.tests.downstream.test_check_panose_identification", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check if Panose is not set to monospaced if advancewidth of all glyphs is not equal to each others", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_euro", 
+        "name": "bakery_lint.tests.downstream.test_check_glyph_existence", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check if 'EURO SIGN' exists", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_nbsp", 
+        "name": "bakery_lint.tests.downstream.test_check_glyph_existence", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check if 'NO-BREAK SPACE' exists", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_space", 
+        "name": "bakery_lint.tests.downstream.test_check_glyph_existence", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check if 'SPACE' exists", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_gpos_table_has_kerning_info", 
+        "name": "bakery_lint.tests.downstream.test_gpos_table_has_kerning_info", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "GPOS table has kerning information", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_ots", 
+        "name": "bakery_lint.tests.downstream.test_check_font_sanitized_for_chrome_and_firefox", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Is TTF file correctly sanitized for Firefox and Chrome", 
+        "targets": [
+          "result"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_hmtx_hhea_max_advance_width_agreement", 
+        "name": "bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check if MaxAdvanceWidth agree in the Hmtx and Hhea tables", 
+        "targets": [
+          "result"
+        ]
+      }
+    ]
+  }, 
+  {
+    "failure": [
+      {
+        "autofix": false, 
+        "methodName": "test_description_is_more_than_500b", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "DESCRIPTION.en_us.html must have size larger than 500 bytes", 
+        "methodDoc": "DESCRIPTION.en_us.html is more than 500 bytes", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_description_is_valid_html", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "DESCRIPTION.en_us.html is not real html file", 
+        "methodDoc": "DESCRIPTION.en_us.html is not real html file", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_does_not_familyName_exist_in_daltonmaag_catalogue", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "False is not true", 
+        "methodDoc": "DALTONMAAG.com", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_does_not_familyName_exist_in_fontshop_catalogue", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "False is not true", 
+        "methodDoc": "FONTSHOP.com", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_does_not_familyName_exist_in_fontsmith_catalogue", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "False is not true", 
+        "methodDoc": "FONTSMITH.com", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_has_unique_style_weight_pairs", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "u'normal:400' unexpectedly found in [u'normal:400']", 
+        "methodDoc": "METADATA.json only contains unique style:weight pairs", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_font_on_disk_family_equal_in_metadata_json", 
+        "name": "bakery_lint.tests.downstream.test_metadata_agreements", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "Unmatched family name are in fonts: Yeseva-One.ttf", 
+        "methodDoc": "Font on disk and in METADATA.json have the same family name", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_font_name_matches_family", 
+        "name": "bakery_lint.tests.downstream.test_metadata_agreements", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "\"fonts.name\" property is not the same as TTF familyname", 
+        "methodDoc": "METADATA.json fonts 'name' property should be same as font familyname", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_postscriptname_contains_correct_weight", 
+        "name": "bakery_lint.tests.downstream.test_check_canonical_weights", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "postScriptName with weight 400 must be ended with \"Regular\" or \"Italic\"", 
+        "methodDoc": "Metadata weight matches postScriptName", 
+        "targets": "metadata"
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_metadata_matches_nametable", 
+        "name": "bakery_lint.tests.downstream.test_check_metadata_matches_nametable", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "YesevaOne: Family name was supposed to be \"Yeseva One\" but is \"YesevaOne\"", 
+        "methodDoc": "Metadata key-value match to table name fields", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_fontname_not_in_camel_case", 
+        "name": "bakery_lint.tests.downstream.test_check_font_name_not_in_camelcase", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "%s are camel cased names. To solve this check just use spaces in names.", 
+        "methodDoc": "Check if fontname is not camel cased", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_canonical_filenames", 
+        "name": "bakery_lint.tests.downstream.test_check_canonical_filenames", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "Lint", 
+        "err_msg": "u'YesevaOne-Regular.ttf' != u'Yeseva-One.ttf'\n- YesevaOne-Regular.ttf\n?          --------\n+ Yeseva-One.ttf\n?       +\n", 
+        "methodDoc": "Test If filename is canonical", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_familyname_matches_fontnames", 
+        "name": "bakery_lint.tests.downstream.test_check_familyname_matches_fontnames", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "YesevaOne-Regular.ttf: Family name \"Yeseva One\" does not match font name: \"YesevaOne\"", 
+        "methodDoc": "Check font name is the same as family name", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_the_same_names_of_glyphs_across_family", 
+        "name": "bakery_lint.tests.downstream.test_check_glyph_consistency", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "Family has a different glyphs's names in fonts", 
+        "methodDoc": "The same names of glyphs across family?", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_the_same_number_of_glyphs_across_family", 
+        "name": "bakery_lint.tests.downstream.test_check_glyph_consistency", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "Family has a different glyphs's count in fonts", 
+        "methodDoc": "The same number of glyphs across family?", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_copyright_contains_correct_rfn", 
+        "name": "bakery_lint.tests.downstream.test_metadata_font_copyright", 
+        "tags": [
+          "required", 
+          "info"
+        ], 
+        "tool": "lint", 
+        "err_msg": "\"Copyright (c) 2011-2012 by Jovanny Lemonad. All rights reserved.\" should have \"Reserved File Name\"", 
+        "methodDoc": "Copyright string contains \"Reserved File Name\"", 
+        "targets": "metadata"
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_copyright_matches_pattern", 
+        "name": "bakery_lint.tests.downstream.test_metadata_font_copyright", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "Regexp didn't match: 'Copyright\\\\s+\\\\(c\\\\)\\\\s+20\\\\d{2}.*\\\\(.*@.*.*\\\\)' not found in u'Copyright (c) 2011-2012 by Jovanny Lemonad. All rights reserved.'", 
+        "methodDoc": "Copyright string matches to Copyright * 20\\d\\d * (*@*.*)", 
+        "targets": "metadata"
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_copyrighttxt_exists", 
+        "name": "bakery_lint.tests.downstream.test_check_text_files_exist", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "['COPYRIGHT.txt'] does not exist in project", 
+        "methodDoc": "Font folder should contains COPYRIGHT.txt", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_fontlogtxt_exists", 
+        "name": "bakery_lint.tests.downstream.test_check_text_files_exist", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "['FONTLOG.txt'] does not exist in project", 
+        "methodDoc": "Font folder should contains FONTLOG.txt", 
+        "targets": [
+          "metadata"
+        ]
+      }
+    ], 
+    "name": "METADATA.json", 
+    "passed": false, 
+    "error": [], 
+    "fixed": [], 
+    "success": [
+      {
+        "autofix": false, 
+        "methodName": "test_charset_latin", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "Yeseva-One.latin is real TrueType file", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_charset_menu", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "Yeseva-One.menu is real TrueType file", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_does_not_familyName_exist_in_fontbureau_catalogue", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "FONTBUREAU.com", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_does_not_familyName_exist_in_fontscom_catalogue", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "FONTS.com", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_does_not_familyName_exist_in_houseind_catalogue", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "HOUSEIND.com", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_does_not_familyName_exist_in_myfonts_catalogue", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "MYFONTS.com", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_does_not_familyName_exist_in_veer_catalogue", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "VEER.com", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_family_is_listed_in_gwf", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "Fontfamily is listed in Google Font Directory", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_atleast_latin_menu_subsets_exist", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "METADATA.json subsets should have at least 'menu' and 'latin'", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_designer_exists_in_profiles_csv", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "Designer exists in GWF profiles.csv", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_fonts_items_dicts", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "METADATA.json fonts key items are dicts", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_fonts_key_list", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "METADATA.json font key should be list", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_fonts_no_dupes", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "METADATA.json fonts propery only should have uniq values", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_keys", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "METADATA.json should have top keys: [\"name\", \"designer\", \"license\", \"visibility\", \"category\", \"size\", \"dateAdded\", \"fonts\", \"subsets\"]", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_license", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "METADATA.json license is 'Apache2', 'UFL' or 'OFL'", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_no_unknown_top_keys", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "METADATA.json don't have unknown top keys", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_subsets_key_list", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "METADATA.json subsets key should be list", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_top_keys_types", 
+        "name": "bakery_lint.tests.metadata_test", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "METADATA.json", 
+        "err_msg": "", 
+        "methodDoc": "METADATA.json should have proper top keys types", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_subsets_exists", 
+        "name": "bakery_lint.tests.downstream.test_check_subsets_exists", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that corresponding subset files exist for fonts", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_postscriptname_in_metadata_equal_to_font_on_disk", 
+        "name": "bakery_lint.tests.downstream.test_metadata_agreements", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Checks METADATA.json 'postScriptName' matches TTF 'postScriptName'", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_family_values_are_all_the_same", 
+        "name": "bakery_lint.tests.downstream.test_metadata_agreements", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that METADATA family values are all the same", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_filename_matches_postscriptname", 
+        "name": "bakery_lint.tests.downstream.test_metadata_agreements", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "METADATA.json `filename` matches `postScriptName`", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_font_have_regular", 
+        "name": "bakery_lint.tests.downstream.test_metadata_agreements", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "According GWF standarts font should have Regular style.", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_fonts_fields_have_fontname", 
+        "name": "bakery_lint.tests.downstream.test_metadata_agreements", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "METADATA.json fonts items fields \"name\", \"postScriptName\", \"fullName\", \"filename\" contains font name right format", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_fullname_is_equal_to_internal_font_fullname", 
+        "name": "bakery_lint.tests.downstream.test_metadata_agreements", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "METADATA.json 'fullname' value matches internal 'fullname'", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_fullname_matches_postScriptName", 
+        "name": "bakery_lint.tests.downstream.test_metadata_agreements", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "METADATA.json `fullName` matches `postScriptName`", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_regular_is_400", 
+        "name": "bakery_lint.tests.downstream.test_metadata_agreements", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Regular should be 400", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_regular_is_normal", 
+        "name": "bakery_lint.tests.downstream.test_metadata_agreements", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Usually Regular should be normal style", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_monospace_agreement", 
+        "name": "bakery_lint.tests.downstream.test_check_monospace_agreements", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Monospace font has hhea.advanceWidthMax equal to each glyph advanceWidth", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_canonical_weights", 
+        "name": "bakery_lint.tests.downstream.test_check_canonical_weights", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check that weights have canonical value", 
+        "targets": "metadata"
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_font_weight_same_as_in_metadata", 
+        "name": "bakery_lint.tests.downstream.test_check_canonical_weights", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Font weight matches metadata.json value of key \"weight\"", 
+        "targets": "metadata"
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_contains_current_font", 
+        "name": "bakery_lint.tests.downstream.test_check_canonical_weights", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "METADATA.json should contains testing font, under canonic name", 
+        "targets": "metadata"
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_menu_file_agreement", 
+        "name": "bakery_lint.tests.downstream.test_check_files_menu_agreements", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check fonts have corresponding menu files", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_canonical_styles", 
+        "name": "bakery_lint.tests.downstream.test_check_canonical_styles", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Test If font styles are canonical", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_metadata_fields", 
+        "name": "bakery_lint.tests.downstream.test_check_metadata_fields", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check METADATA.json \"fonts\" property items have required field", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_the_same_encodings_of_glyphs_across_family", 
+        "name": "bakery_lint.tests.downstream.test_check_glyph_consistency", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "The same unicode encodings of glyphs across family?", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_italic_style_matches_names", 
+        "name": "bakery_lint.tests.downstream.test_check_metadata_style_matches_names", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check metadata.json font.style `italic` matches font internal", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_normal_style_matches_names", 
+        "name": "bakery_lint.tests.downstream.test_check_metadata_style_matches_names", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check metadata.json font.style `italic` matches font internal", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_check_menu_contains_proper_glyphs", 
+        "name": "bakery_lint.tests.downstream.test_check_menu_contains_proper_glyphs", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Check menu file contains proper glyphs", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_copyright_is_consistent_across_family", 
+        "name": "bakery_lint.tests.downstream.test_metadata_font_copyright", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "METADATA.json fonts copyright string is the same for all items", 
+        "targets": "metadata"
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_metadata_copyright_size", 
+        "name": "bakery_lint.tests.downstream.test_metadata_font_copyright", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Copyright string should be less than 500 chars", 
+        "targets": "metadata"
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_description_exists", 
+        "name": "bakery_lint.tests.downstream.test_check_text_files_exist", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Font folder should contains DESCRIPTION.en_us.html", 
+        "targets": [
+          "metadata"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_licensetxt_exists", 
+        "name": "bakery_lint.tests.downstream.test_check_text_files_exist", 
+        "tags": [
+          "required"
+        ], 
+        "tool": "lint", 
+        "err_msg": "", 
+        "methodDoc": "Font folder should contains LICENSE.txt", 
+        "targets": [
+          "metadata"
+        ]
+      }
+    ]
+  }, 
+  {
+    "failure": [
+      {
+        "autofix": false, 
+        "methodName": "test_glyphname_does_not_contain_disallowed_chars", 
+        "name": "bakery_lint.tests.upstream.test_ttx_glyphnames_clean", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "Glyph \".null\" does not comply conventions. A glyph name may be up to 31 characters in length, must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or period. The only exception is the special character \".notdef\". \"twocents\", \"a1\", and \"_\" are valid glyph names. \"2cents\" and \".twocents\" are not.", 
+        "methodDoc": "GlyphName length < 30 and does contain allowed chars only", 
+        "targets": [
+          "upstream-ttx"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_epar_in_keys", 
+        "name": "bakery_lint.tests.upstream.test_ttx_requirements", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "fontTools", 
+        "err_msg": "'EPAR' not found in ['GlyphOrder', 'head', 'hhea', 'maxp', 'OS/2', 'hmtx', 'cmap', 'fpgm', 'prep', 'cvt ', 'loca', 'glyf', 'kern', 'name', 'post', 'gasp', 'GPOS']", 
+        "methodDoc": "EPAR table present in font?", 
+        "targets": [
+          "upstream-ttx"
+        ]
+      }
+    ], 
+    "name": "YesevaOne-Regular.ttf.ttx", 
+    "passed": true, 
+    "error": [], 
+    "fixed": [
+      {
+        "autofix": true, 
+        "methodName": "test_source_ttf_font_filename_equals_familystyle", 
+        "name": "bakery_lint.tests.upstream.test_ttx_font_filename_eq_familystyle", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "'YesevaOne-Regular.ttf' != 'Yeseva-One'", 
+        "methodDoc": "Source TTF Font filename equals family style", 
+        "targets": [
+          "upstream", 
+          "upstream-ttx"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_source_ttf_font_filename_equals_familystyle", 
+        "name": "bakery_lint.tests.upstream.test_ttx_font_filename_eq_familystyle", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "'YesevaOne-Regular.ttf' != 'Yeseva-One'", 
+        "methodDoc": "Source TTF Font filename equals family style", 
+        "targets": [
+          "upstream", 
+          "upstream-ttx"
+        ]
+      }
+    ], 
+    "success": [
+      {
+        "autofix": false, 
+        "methodName": "test_ttx_family_naming_recommendation", 
+        "name": "bakery_lint.tests.upstream.test_ttx_fontfamily_recommendations", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "TTFont", 
+        "err_msg": "", 
+        "methodDoc": "The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0", 
+        "targets": [
+          "upstream-ttx"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_ttx_duplicate_glyphs", 
+        "name": "bakery_lint.tests.upstream.test_ttx_requirements", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "fontTools", 
+        "err_msg": "", 
+        "methodDoc": "Font contains unique glyph names? (Duplicate glyph names prevent font installation on Mac OS X.)", 
+        "targets": [
+          "upstream-ttx"
+        ]
+      }
+    ]
+  }, 
+  {
+    "failure": [
+      {
+        "autofix": false, 
+        "methodName": "test_glyphname_does_not_contain_disallowed_chars", 
+        "name": "bakery_lint.tests.upstream.test_ttx_glyphnames_clean", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "Glyph \".null\" does not comply conventions. A glyph name may be up to 31 characters in length, must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or period. The only exception is the special character \".notdef\". \"twocents\", \"a1\", and \"_\" are valid glyph names. \"2cents\" and \".twocents\" are not.", 
+        "methodDoc": "GlyphName length < 30 and does contain allowed chars only", 
+        "targets": [
+          "upstream-ttx"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_epar_in_keys", 
+        "name": "bakery_lint.tests.upstream.test_ttx_requirements", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "fontTools", 
+        "err_msg": "'EPAR' not found in ['GlyphOrder', 'head', 'hhea', 'maxp', 'OS/2', 'hmtx', 'cmap', 'fpgm', 'prep', 'cvt ', 'loca', 'glyf', 'kern', 'name', 'post', 'gasp', 'GPOS']", 
+        "methodDoc": "EPAR table present in font?", 
+        "targets": [
+          "upstream-ttx"
+        ]
+      }
+    ], 
+    "name": "YesevaOne-Regular_v2.ttf.ttx", 
+    "passed": true, 
+    "error": [], 
+    "fixed": [
+      {
+        "autofix": true, 
+        "methodName": "test_source_ttf_font_filename_equals_familystyle", 
+        "name": "bakery_lint.tests.upstream.test_ttx_font_filename_eq_familystyle", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "'YesevaOne-Regular_v2.ttf' != 'Yeseva-One'", 
+        "methodDoc": "Source TTF Font filename equals family style", 
+        "targets": [
+          "upstream", 
+          "upstream-ttx"
+        ]
+      }, 
+      {
+        "autofix": true, 
+        "methodName": "test_source_ttf_font_filename_equals_familystyle", 
+        "name": "bakery_lint.tests.upstream.test_ttx_font_filename_eq_familystyle", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "lint", 
+        "err_msg": "'YesevaOne-Regular_v2.ttf' != 'Yeseva-One'", 
+        "methodDoc": "Source TTF Font filename equals family style", 
+        "targets": [
+          "upstream", 
+          "upstream-ttx"
+        ]
+      }
+    ], 
+    "success": [
+      {
+        "autofix": false, 
+        "methodName": "test_ttx_family_naming_recommendation", 
+        "name": "bakery_lint.tests.upstream.test_ttx_fontfamily_recommendations", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "TTFont", 
+        "err_msg": "", 
+        "methodDoc": "The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0", 
+        "targets": [
+          "upstream-ttx"
+        ]
+      }, 
+      {
+        "autofix": false, 
+        "methodName": "test_ttx_duplicate_glyphs", 
+        "name": "bakery_lint.tests.upstream.test_ttx_requirements", 
+        "tags": [
+          "note"
+        ], 
+        "tool": "fontTools", 
+        "err_msg": "", 
+        "methodDoc": "Font contains unique glyph names? (Duplicate glyph names prevent font installation on Mac OS X.)", 
+        "targets": [
+          "upstream-ttx"
+        ]
+      }
+    ]
+  }
+]

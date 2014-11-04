@@ -1,0 +1,11 @@
+{
+  "gh_pages": "https://github.com/fontdirectory/yesevaone/tree/gh-pages", 
+  "url": "https://github.com/fontdirectory/yesevaone", 
+  "fontbakery": {
+    "tests_edit_url": "https://github.com/googlefonts/fontbakery/edit/master/bakery_lint/tests", 
+    "tests_url": "https://github.com/googlefonts/fontbakery/blob/master/bakery_lint/tests", 
+    "master_edit_url": "https://github.com/googlefonts/fontbakery/edit/master", 
+    "master_url": "https://github.com/googlefonts/fontbakery/blob/master", 
+    "repo_url": "https://github.com/googlefonts/fontbakery"
+  }
+}
